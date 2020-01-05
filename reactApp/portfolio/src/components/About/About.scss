@@ -1,0 +1,103 @@
+#about {
+  padding: 60px 0;
+  .container {
+    display: flex;
+    flex-direction: row;
+    .profile-pic {
+      flex: 0 0 45%;
+      justify-content: center;
+      img {
+        width: 80%;
+        border: 8px solid #fff;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .profile-wrapper {
+      flex: 0 0 50%;
+
+      h3 {
+        font-size: 38px;
+        font-weight: 700;
+        font-family: source sans pro, sans-serif;
+        line-height: 1.2;
+        color: inherit;
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+      }
+
+      .about-profile {
+        position: relative;
+        margin: 20px 0;
+
+        ul {
+          list-style: outside none none;
+          margin: 0;
+          padding: 0;
+          li {
+            line-height: 28px;
+          }
+        }
+
+        .pro-title {
+          font-weight: 700;
+          color: #040404;
+          position: relative;
+          width: 120px;
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+
+        .pro-title:after {
+          position: absolute;
+          content: ":";
+          color: #040404;
+          font-size: 14px;
+          left: 85px;
+        }
+      }
+      .btn {
+        text-decoration: none;
+        font-size: 14px;
+        padding: 10px 30px;
+        margin: 10px 10px 0 0;
+        cursor: pointer;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        line-height: 1.5;
+        transition: all 0.2s linear;
+        display: inline-block;
+        font-weight: 400;
+        color: #fff;
+        border-radius: 4px;
+        text-transform: uppercase;
+      }
+      .btn-common {
+        background-color: #00b4d9;
+        position: relative;
+        z-index: 1;
+      }
+      .btn-common:hover {
+        color: #fff;
+        background-color: #21cff3;
+        box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+      }
+      .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+      }
+      .btn-danger:hover {
+        background-color: #f55262;
+        border-color: #f55262;
+        box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

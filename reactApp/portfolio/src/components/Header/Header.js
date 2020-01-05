@@ -15,15 +15,9 @@ function Header() {
           <div className="nav-bar">
             <ul>
               <li>
-                <NavLink activeStyle={activeStyle} exact to="/">
-                  Home
-                </NavLink>
-                <NavLink activeStyle={activeStyle} to="/About">
-                  About
-                </NavLink>
-                <NavLink activeStyle={activeStyle} to="/Contact">
-                  Contact
-                </NavLink>
+                <a href="#intro">Home</a>
+                <a href="#about">About</a>
+                <a href="#Contact">Contact</a>
               </li>
             </ul>
           </div>
