@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./About.scss";
 
 function About() {
+  const [fadeInRight, setfadeInRight] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setfadeInRight(true);
+    }, 100);
+  });
+
   return (
     <>
-      <section id="about">
+      <div className="aboutSection">
         <div className="container">
-          <div className="profile-pic">
+          <div
+            className={fadeInRight ? "profile-pic fadeInLeft" : "profile-pic"}
+          >
             <img alt="" src="../../assets/images/profile-pic.jpg"></img>
           </div>
-          <div className="profile-wrapper">
+          <div
+            className={
+              fadeInRight ? "profile-wrapper fadeInRight" : "profile-wrapper"
+            }
+          >
             <h3>Hi Guys!</h3>
             <p>
               Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum
@@ -69,7 +83,7 @@ function About() {
             </a>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }
