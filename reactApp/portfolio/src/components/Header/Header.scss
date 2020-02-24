@@ -92,3 +92,15 @@ nav {
   transform-origin: top;
   transition: transform 0.5s ease;
 }
+#mobileMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #mobileMenu {
+    display: block;
+  }
+  #desktopMenu {
+    display: none;
+  }
+}

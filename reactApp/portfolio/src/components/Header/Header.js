@@ -16,7 +16,7 @@ const Header = props => {
               <img alt="" src="../../assets/images/logo.png"></img>
             </a>
           </div>
-          <div style={{ display: "none" }} className="nav-bar">
+          <div id="desktopMenu" className="nav-bar">
             <ul>
               <li>
                 <a
@@ -58,7 +58,7 @@ const Header = props => {
               </li>
             </ul>
           </div>
-          <div className="slicknav_menu" onClick={alertf}>
+          <div id="mobileMenu" className="slicknav_menu" onClick={alertf}>
             <div aria-haspopup="true" tabindex="0" className="slicknav_btn">
               <span className="slicknav_icon slicknav_no-text">
                 <span className="slicknav_icon-bar"></span>

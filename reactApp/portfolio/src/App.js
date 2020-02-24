@@ -62,6 +62,7 @@ function App() {
       >
         <Intro />
       </section>
+      {/*       
       <section
         id="about"
         ref={ref => {
@@ -102,7 +103,7 @@ function App() {
         }}
       >
         <Contact activeSection={activeSection} />
-      </section>
+      </section> */}
     </>
   );
 }
