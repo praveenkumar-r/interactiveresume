@@ -7,6 +7,9 @@ nav {
 
     .nav-bar {
       width: 100%;
+      .active {
+        color: #00b4d9;
+      }
       ul {
         display: flex;
         flex-direction: row;
@@ -22,7 +25,6 @@ nav {
             cursor: pointer;
             line-height: 40px;
             transition: all 0.3s ease-in-out;
-            text-decoration: none;
           }
           a:hover {
             color: #00b4d9;
@@ -30,5 +32,63 @@ nav {
         }
       }
     }
+
+    .slicknav_menu {
+      border: 1px solid #00b4d9;
+      font-size: 16px;
+
+      .slicknav_btn {
+        cursor: pointer;
+        display: block;
+        float: right;
+        padding: 10px;
+        position: relative;
+      }
+
+      .slicknav_icon-bar {
+        display: block;
+        background: #00b4d9;
+        width: 1.125em;
+        height: 0.125em;
+        border-radius: 1px;
+        margin-top: 0.188em;
+      }
+    }
+
+    .slicknav_nav {
+      color: #fff;
+      font-size: 0.875em;
+      width: 100%;
+      li {
+        display: block;
+        line-height: 30px;
+        a {
+          padding: 5px 10px;
+          margin: 2px 5px;
+          text-decoration: none;
+          color: #666;
+          display: block;
+        }
+        a:hover {
+          color: #00b4d9;
+          outline: none;
+          background: #f8f9fa;
+        }
+        .active {
+          color: #00b4d9;
+        }
+      }
+    }
   }
+}
+.closeMenuItem {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s ease;
+}
+
+.openMenuItem {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.5s ease;
 }

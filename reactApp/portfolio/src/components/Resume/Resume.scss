@@ -1,0 +1,77 @@
+#resume {
+  padding: 60px 0;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    #education-block {
+      flex: 0 0 50%;
+    }
+    #experience-block {
+      flex: 0 0 50%;
+    }
+    .timeline {
+      .timelin-title {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-left: 25px;
+      }
+
+      .content-text {
+        background: #f2f2f2;
+        padding: 20px;
+        .line-title {
+          font-size: 16px;
+          line-height: 6px;
+        }
+        .line-text {
+          color: #888;
+          line-height: 18px;
+        }
+      }
+      li {
+        padding: 0 20px 20px 30px;
+        list-style: none;
+        border-left: 2px solid #f1f1f1;
+        span {
+          font-size: 12px;
+          padding: 9px 0;
+          display: block;
+        }
+      }
+      li:first-child i {
+        font-size: 20px;
+        float: left;
+        margin-left: -30px;
+        line-height: 50px;
+        border-radius: 30px;
+        margin: -12px -55px;
+        background: #00b4d9;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+      }
+      li:first-child:before {
+        border: 0;
+        background: 0 0;
+        position: relative;
+      }
+
+      li:before {
+        content: "";
+        border: solid 2px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50px;
+        font-size: 8px;
+        margin-left: -35px;
+        font-weight: 400;
+        background: #fff;
+        display: block;
+        position: absolute;
+        margin-top: 18px;
+        border-color: #00b4d9 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+#contact {
+  padding: 60px 0;
+  .contact-form {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 30px #ededed;
+    padding: 60px 40px;
+    .contact-form-block {
+      flex: 0 0 50%;
+      margin-right: 2%;
+
+      #contactForm {
+        .form-container {
+          display: flex;
+          flex-wrap: wrap;
+          .form-group-split {
+            flex: 0 0 50%;
+          }
+          .form-group {
+            flex: 0 0 100%;
+            .form-control {
+              width: 96% !important;
+            }
+            .submit {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+
+    .address-block {
+      flex: 0 0 50%;
+      margin-bottom: 1rem;
+      .address-container {
+        padding: 4px;
+        border: 1px solid #e1e1e1;
+        .single-contact {
+          margin: 19px 22px;
+          padding: 3px 55px;
+          position: relative;
+          color: #666;
+
+          .contact-icon {
+            background: #00b4d9;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 18px;
+            height: 35px;
+            left: 0;
+            padding-top: 5px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            i {
+              display: block;
+              height: inherit;
+              padding-top: 7px;
+              font-weight: bolder;
+            }
+          }
+
+          a {
+            color: #666;
+          }
+        }
+      }
+    }
+
+    .map-block {
+      flex: 0 0 48%;
+      .directions-block {
+        position: absolute;
+        z-index: 1;
+        margin-top: 60px;
+        background-color: #fff;
+        width: 220px;
+        height: 75px;
+        margin-left: 10px;
+        font-size: 12px;
+        padding: 5px;
+        box-shadow: 0 0 30px #ededed;
+        display: flex;
+
+        .icon-directions {
+          font-size: 30px;
+          color: deepskyblue;
+          margin-top: 20px;
+          margin-left: 5px;
+        }
+        a {
+          margin-top: 50px;
+          margin-left: -42px;
+          font-size: 11px;
+          color: #3a84df;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+      font-size: 14px;
+      border-radius: 0;
+      transition: all 0.3s;
+      padding: 8px 10px;
+      border: 1px solid #e1e1e1;
+      line-height: 1.5;
+      width: 80%;
+    }
+  }
+}

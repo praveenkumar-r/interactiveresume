@@ -1,27 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./About.scss";
 
-function About() {
-  const [fadeInRight, setfadeInRight] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setfadeInRight(true);
-    }, 100);
-  });
-
+const About = props => {
   return (
     <>
       <div className="aboutSection">
         <div className="container">
           <div
-            className={fadeInRight ? "profile-pic fadeInLeft" : "profile-pic"}
+            className={
+              props.activeSection === "about"
+                ? "profile-pic fadeInLeft"
+                : "profile-pic"
+            }
           >
             <img alt="" src="../../assets/images/profile-pic.jpg"></img>
           </div>
           <div
             className={
-              fadeInRight ? "profile-wrapper fadeInRight" : "profile-wrapper"
+              props.activeSection === "about"
+                ? "profile-wrapper fadeInRight"
+                : "profile-wrapper"
             }
           >
             <h3>Hi Guys!</h3>
@@ -75,10 +73,10 @@ function About() {
                 </li>
               </ul>
             </div>
-            <a href="#" className="btn btn-common">
+            <a href="#resume" className="btn">
               <i className="icon-paper-clip"></i> Download Resume
             </a>
-            <a href="#" className="btn btn-danger">
+            <a href="#contact" className="btn btn-danger">
               <i className="icon-speech"></i> Contact Me
             </a>
           </div>
@@ -86,6 +84,6 @@ function About() {
       </div>
     </>
   );
-}
+};
 
 export default About;

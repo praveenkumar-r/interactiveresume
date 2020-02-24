@@ -1,75 +1,54 @@
-.fadeInRight {
-  animation-name: fadeInRightAnime;
-  animation-duration: 1s;
+@mixin keyframes($animationName, $arg1, $arg2, $arg3) {
+  @keyframes #{$animationName} {
+    0% {
+      transform: translate3d(#{$arg1}, #{$arg2}, #{$arg3});
+    }
+
+    100% {
+      transform: none;
+    }
+  }
 }
 
 .fadeInLeft {
+  @include keyframes(fadeInLeftAnime, -50%, 0, 0);
   animation-name: fadeInLeftAnime;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
+}
+
+.fadeInRight {
+  @include keyframes(fadeInRightAnime, 50%, 0, 0);
+  animation-name: fadeInRightAnime;
+  animation-duration: 1.5s;
 }
 
 .fadeInTop {
+  @include keyframes(fadeInTopAnime, 0, -50%, 0);
   animation-name: fadeInTopAnime;
   animation-duration: 1s;
 }
 
 .fadeInBottom {
+  @include keyframes(fadeInBottomAnime, 0, 50%, 0);
   animation-name: fadeInBottomAnime;
   animation-duration: 1s;
 }
 
-@keyframes fadeInLeftAnime {
+@keyframes pitch {
   0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-20%, 0, 0);
-    transform: translate3d(-20%, 0, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 50%, 0);
   }
 
   100% {
-    opacity: 1;
-    -webkit-transform: none;
     transform: none;
   }
 }
 
-@keyframes fadeInRightAnime {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(20%, 0, 0);
-    transform: translate3d(20%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInTopAnime {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -20%, 0);
-    transform: translate3d(0, -20%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInBottomAnime {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -20%, 0);
-    transform: translate3d(0, -20%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+.pichEffect {
+  animation-name: pitch;
+  animation-duration: 1.5s;
 }

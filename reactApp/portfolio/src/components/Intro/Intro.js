@@ -9,7 +9,7 @@ function Intro() {
         <div className="container">
           <div className="contents">
             <h5 className="script-font header-tag">Hi This is</h5>
-            <h2 className="header-tag">Praveen Kumar</h2>
+            <h2 className="pichEffect header-tag">Praveen Kumar</h2>
             <p className="script-font">Front-end Web Developer</p>
             <ul className="social-icon wow fadeInUp">
               <li>
