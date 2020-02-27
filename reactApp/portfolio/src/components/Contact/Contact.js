@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <div className="container">
-        <div className="contact-form">
+        <div className="contact-form flex_direction_column">
           <div className="contact-form-block">
             <div className="address-block">
               <h2>Contact Address</h2>
@@ -72,7 +72,7 @@ const Contact = () => {
                     placeholder="Your Message"
                     style={{ minHeight: "75px" }}
                   ></textarea>
-                  <button className="submit btn">Submit</button>
+                  <button className="submit btn">Send Message</button>
                 </div>
               </div>
             </form>
@@ -86,8 +86,15 @@ const Contact = () => {
                   No:19, Navlar street, Anna Nagar, Pammal, Chennai- 600 075
                 </span>
               </div>
-              <i className="icon-directions"></i>
               <a
+                style={{ marginTop: "20px" }}
+                target="_blank"
+                href="https://www.google.com/maps/dir//12.9777781,80.143506/@12.9767117,80.1411027,17z/data=!4m2!4m1!3e0"
+              >
+                <i className="icon-directions"></i>
+              </a>
+              <a
+                className="directions"
                 target="_blank"
                 href="https://www.google.com/maps/dir//12.9777781,80.143506/@12.9767117,80.1411027,17z/data=!4m2!4m1!3e0"
               >

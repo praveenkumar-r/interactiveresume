@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./Header.scss";
 
 const Header = props => {
+  // let openMenu = false;
   const [openMenu, setopenMenu] = useState(false);
   const alertf = () => {
-    debugger;
+    //  openMenu = !openMenu;
     setopenMenu(!openMenu);
   };
   return (
@@ -73,8 +74,12 @@ const Header = props => {
             openMenu ? "container openMenuItem" : "container closeMenuItem"
           }
         >
-          {openMenu}
-          <ul className="slicknav_nav" aria-hidden="false" role="menu">
+          <ul
+            className="slicknav_nav"
+            aria-hidden="false"
+            role="menu"
+            onClick={alertf}
+          >
             <li>
               <a
                 className={props.activeSection === "intro" ? "active" : ""}

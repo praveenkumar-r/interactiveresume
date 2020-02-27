@@ -26,7 +26,6 @@ const Map = () => {
     });
   };
   const createMarker = () => {
-    debugger;
     new window.google.maps.Marker({
       position: { lat: 12.9777885, lng: 80.1435489 },
       map: googleMap
@@ -35,7 +34,7 @@ const Map = () => {
   return (
     <>
       <div
-        style={{ height: "79%", border: "1px solid #e1e1e1" }}
+        style={{ border: "1px solid #e1e1e1" }}
         className="map"
         ref={googleMapRef}
       ></div>

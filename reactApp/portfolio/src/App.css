@@ -13,14 +13,31 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  font-size: 4.5px;
+}
+.container {
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** Until ipad **/
+@media only screen and (max-width: 768px) {
+  .flex_direction_column {
+    flex-direction: column !important;
+  }
+}
+
 /** For mobile **/
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) {
   body {
     font-size: 7px;
   }
   .container {
-    padding-left: 37px;
-    padding-right: 37px;
+    padding-left: 28px;
+    padding-right: 28px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -30,17 +47,35 @@ body {
   body {
     font-size: 8.75px;
   }
+  .container {
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   body {
     font-size: 10.5px;
   }
+  .container {
+    padding-left: 56px;
+    padding-right: 56px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   body {
     font-size: 14px;
+  }
+  .container {
+    padding-left: 65px;
+    padding-right: 65px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

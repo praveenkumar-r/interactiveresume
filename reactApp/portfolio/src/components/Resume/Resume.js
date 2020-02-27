@@ -5,8 +5,8 @@ const Resume = props => {
   const animateClass = inp => (props.activeSection === "resume" ? inp : "");
   return (
     <>
-      <div className="container">
-        <div id="education-block">
+      <div className="container flex_direction_column">
+        <div className="padLeft" id="education-block">
           <ul className="timeline">
             <li className={`${animateClass("fadeInTop")}`}>
               <i className="icon-graduation"></i>
@@ -44,7 +44,7 @@ const Resume = props => {
             </li>
           </ul>
         </div>
-        <div id="experience-block">
+        <div className="padLeft" id="experience-block">
           <ul className="timeline">
             <li className={`${animateClass("fadeInTop")}`}>
               <i className="icon-briefcase"></i>

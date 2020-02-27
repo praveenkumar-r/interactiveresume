@@ -90,4 +90,11 @@
       }
     }
   }
+
+  /** Until ipad **/
+  @media only screen and (max-width: 768px) {
+    .mobileAdjust {
+      height: 318px !important;
+    }
+  }
 }

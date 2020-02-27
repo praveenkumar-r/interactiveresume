@@ -6,10 +6,14 @@ const Work = () => {
     <>
       <div className="container">
         <h2 className="section-title">My Remarkable Works</h2>
-        <div id="work-block">
+        <div id="work-block" className="flex_direction_column">
           <div className="work-item">
             <div className="work-image">
-              <img src="assets/images/HSN.png" alt=""></img>
+              <img
+                className="mobileAdjust"
+                src="assets/images/HSN.png"
+                alt=""
+              ></img>
             </div>
             <div className="overlay">
               <h3>Home shopping Network</h3>
@@ -35,7 +39,10 @@ const Work = () => {
             </div>
           </div>
 
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div
+            style={{ display: "flex", justifyContent: "center" }}
+            className="flex_direction_column"
+          >
             <div className="work-item">
               <div className="work-image">
                 <img src="assets/images/eRoutes.png" alt=""></img>

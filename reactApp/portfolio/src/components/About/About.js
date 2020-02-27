@@ -5,7 +5,7 @@ const About = props => {
   return (
     <>
       <div className="aboutSection">
-        <div className="container">
+        <div className="container flex_direction_column">
           <div
             className={
               props.activeSection === "about"
