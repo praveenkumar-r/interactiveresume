@@ -95,7 +95,7 @@ const Services = props => {
                 ></span>
               </div>
               <div className="card-content">
-                <h3>Front-end Development 4</h3>
+                <h3>Front-end Development4</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse condi.
@@ -181,7 +181,7 @@ const Services = props => {
                 ></span>
               </div>
               <div className="card-content">
-                <h3>Front-end Development 4</h3>
+                <h3>Front-end Development4</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse condi.

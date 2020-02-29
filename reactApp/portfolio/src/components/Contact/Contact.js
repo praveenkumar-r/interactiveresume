@@ -101,7 +101,7 @@ const Contact = () => {
                 Directions
               </a>
             </div>
-            {/* <Map /> */}
+            <Map />
           </div>
         </div>
       </div>

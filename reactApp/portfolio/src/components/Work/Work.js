@@ -6,14 +6,10 @@ const Work = () => {
     <>
       <div className="container">
         <h2 className="section-title">My Remarkable Works</h2>
-        <div id="work-block" className="flex_direction_column">
+        <div id="work-block">
           <div className="work-item">
             <div className="work-image">
-              <img
-                className="mobileAdjust"
-                src="assets/images/HSN.png"
-                alt=""
-              ></img>
+              <img src="assets/images/HSN.png" alt=""></img>
             </div>
             <div className="overlay">
               <h3>Home shopping Network</h3>
@@ -38,28 +34,22 @@ const Work = () => {
               <p>Shop By Remote</p>
             </div>
           </div>
-
-          <div
-            style={{ display: "flex", justifyContent: "center" }}
-            className="flex_direction_column"
-          >
-            <div className="work-item">
-              <div className="work-image">
-                <img src="assets/images/eRoutes.png" alt=""></img>
-              </div>
-              <div className="overlay">
-                <h3>Home shopping Network</h3>
-                <p>Shop By Remote</p>
-              </div>
+          <div className="work-item">
+            <div className="work-image">
+              <img src="assets/images/eRoutes.png" alt=""></img>
             </div>
-            <div className="work-item">
-              <div className="work-image">
-                <img src="assets/images/shopperExplorer.png" alt=""></img>
-              </div>
-              <div className="overlay">
-                <h3>Home shopping Network</h3>
-                <p>Shop By Remote</p>
-              </div>
+            <div className="overlay">
+              <h3>Home shopping Network</h3>
+              <p>Shop By Remote</p>
+            </div>
+          </div>
+          <div className="work-item">
+            <div className="work-image">
+              <img src="assets/images/shopperExplorer.png" alt=""></img>
+            </div>
+            <div className="overlay">
+              <h3>Home shopping Network</h3>
+              <p>Shop By Remote</p>
             </div>
           </div>
         </div>

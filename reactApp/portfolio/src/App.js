@@ -87,14 +87,14 @@ function App() {
       >
         <Resume activeSection={activeSection} />
       </section>
-      {/* <section
+      <section
         id="work"
         ref={ref => {
           ref != null && itemsRef.current.push(ref);
         }}
       >
         <Work activeSection={activeSection} />
-      </section> */}
+      </section>
       <section
         id="contact"
         ref={ref => {
