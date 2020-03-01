@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Services.scss";
 
 const Services = props => {
-  const [hiddenIndex, sethiddenIndex] = useState(1);
-  useEffect(() => {
-    let activeIndex = 1;
-    var carousalCall;
-    const carousal = () => {
-      console.log(activeIndex);
-      sethiddenIndex(activeIndex);
-      activeIndex = activeIndex + 1;
-      if (activeIndex > 5) activeIndex = 1;
-    };
-    clearInterval(carousalCall);
-    carousalCall = setInterval(carousal, 2000);
-  }, []);
-
   const animateClass = (inp, index) =>
-    props.activeSection === "services" && hiddenIndex === index
-      ? "card-section"
-      : "card-section";
+    props.activeSection === "services" ? "card-section" : "card-section";
 
   return (
     <>
@@ -32,7 +16,11 @@ const Services = props => {
       >
         What I do
       </h2>
-
+      <div className="navigate">
+        <div className="leftarrow">
+          <i className="arrow left"></i>
+        </div>
+      </div>
       <div className="container slider">
         <div className={`card-container slide-track animateCarousal`}>
           <div className={`${animateClass("fadeInTop", 1)}`}>
