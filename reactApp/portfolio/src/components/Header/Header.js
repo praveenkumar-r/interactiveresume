@@ -60,7 +60,7 @@ const Header = props => {
             </ul>
           </div>
           <div id="mobileMenu" className="slicknav_menu" onClick={alertf}>
-            <div aria-haspopup="true" tabindex="0" className="slicknav_btn">
+            <div aria-haspopup="true" className="slicknav_btn">
               <span className="slicknav_icon slicknav_no-text">
                 <span className="slicknav_icon-bar"></span>
                 <span className="slicknav_icon-bar"></span>

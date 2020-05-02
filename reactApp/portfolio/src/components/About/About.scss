@@ -1,16 +1,17 @@
 #about {
   padding: 60px 0;
-  background: url("/assets/images/background.png");
+  background: var(--evenbackgroundImg);
   background-attachment: fixed;
   .container {
     display: flex;
     flex-direction: row;
+    color: var(--primaryfontColor);
     .profile-pic {
       flex: 0 0 45%;
       justify-content: center;
       img {
         width: 80%;
-        border: 8px solid #fff;
+        border: 8px solid var(--aboutimageFrame);
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
       }
     }
@@ -43,7 +44,7 @@
 
         .pro-title {
           font-weight: 700;
-          color: #040404;
+          color: var(--aboutfontColor);
           position: relative;
           width: 120px;
           display: inline-block;
@@ -53,7 +54,7 @@
         .pro-title:after {
           position: absolute;
           content: ":";
-          color: #040404;
+          color: var(--aboutfontColor);
           font-size: 14px;
           left: 85px;
         }

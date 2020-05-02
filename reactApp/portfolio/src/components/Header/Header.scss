@@ -1,9 +1,10 @@
 nav {
+  height: 67px;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    background: var(--headerbackground);
     ul {
       font-size: 14px;
     }
@@ -21,7 +22,7 @@ nav {
           list-style: none;
           a {
             font-weight: 700;
-            color: #333;
+            color: var(--headerfontcolor);
             padding: 0 17px;
             text-transform: uppercase;
             cursor: pointer;

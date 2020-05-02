@@ -1,6 +1,6 @@
 #resume {
   padding: 60px 0;
-  background: url("/assets/images/background.png");
+  background: var(--evenbackgroundImg);
   background-attachment: fixed;
   .container {
     display: flex;
@@ -9,20 +9,22 @@
     }
     .timeline {
       .timelin-title {
+        color: var(--primaryfontColor);
         font-size: 20px;
         text-transform: uppercase;
         margin-left: 25px;
       }
 
       .content-text {
-        background: #f2f2f2;
+        background: var(--resumeContextbackgroundcolor);
+        color: var(--primaryfontColor);
         padding: 20px;
         .line-title {
           font-size: 12px;
           line-height: 14px;
         }
         .line-text {
-          color: #888;
+          color: var(--resumeContextLinecolor);
           line-height: 18px;
         }
       }

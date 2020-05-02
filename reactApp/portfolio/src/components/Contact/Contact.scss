@@ -1,12 +1,13 @@
 #contact {
   padding: 60px 0;
-  background: url(/assets/images/background.png);
+  background: var(--evenbackgroundImg);
   background-attachment: fixed;
   .contact-form {
     display: flex;
-    background: #fff;
-    box-shadow: 0 0 30px #ededed;
+    background: var(--contackbckgroundColor);
+    box-shadow: var(--contactBoxShadow);
     padding: 60px 40px;
+    color: var(--primaryfontColor);
     .contact-form-block {
       flex: 0 0 50%;
       margin-right: 2%;
@@ -47,6 +48,7 @@
 
           p {
             width: 135px;
+            color: var(--primaryfontColor);
           }
 
           .contact-icon {
@@ -71,7 +73,7 @@
           }
 
           a {
-            color: #666;
+            color: var(--primaryfontColor);
           }
         }
       }
@@ -90,8 +92,9 @@
         margin-left: 10px;
         font-size: 12px;
         padding: 5px;
-        box-shadow: 0 0 30px #ededed;
+        box-shadow: var(--mapBoxShadow);
         display: flex;
+        color: #666;
 
         .icon-directions {
           font-size: 30px;

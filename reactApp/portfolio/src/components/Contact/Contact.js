@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.scss";
 import Map from "../Map/Map";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <>
       <div className="container">
@@ -34,7 +34,7 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              {/* <Map /> */}
+              <Map theme={props.theme} />
             </div>
 
             <h2>Contact Form</h2>

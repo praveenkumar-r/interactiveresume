@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      function receiveMessage(inp) {
+        debugger;
+        if (!inp.data.id)
+          document.getElementById("mainWindow").width = inp.data;
+        console.log("****Width Identified", inp);
+      }
+      setTimeout(() => {
+        let width = sessionStorage.getItem("width");
+        document.getElementById("mainWindow").width = width;
+      });
+      window.addEventListener("message", receiveMessage, false);
+    </script>
+  </head>
+  <body>
+    <iframe
+      id="mainWindow"
+      style="height:100%;min-height: 600px;"
+      src="http://localhost:3000"
+    ></iframe>
+  </body>
+</html>
