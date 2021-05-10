@@ -14,27 +14,27 @@ function Intro() {
             <p className="script-font">Front-end Web Developer</p>
             <ul className="social-icon wow fadeInUp">
               <li>
-                <a className="facebook" href="#">
+                <a className="facebook" target="blank" href="https://www.facebook.com/profile.php?id=1777110200">
                   <i className="icon-social-facebook"></i>
                 </a>
               </li>
               <li>
-                <a className="twitter" href="#">
+                <a className="twitter" target="blank" href="https://twitter.com/RpkSharaj?s=09">
                   <i className="icon-social-twitter"></i>
                 </a>
               </li>
               <li>
-                <a className="instagram" href="#">
+                <a className="instagram" target="blank" href="https://www.instagram.com/rpk.sharaj/">
                   <i className="icon-social-instagram"></i>
                 </a>
               </li>
               <li>
-                <a className="linkedin" href="#">
+                <a className="linkedin" target="blank" href="https://www.linkedin.com/in/praveen-kumar-rajendran-693b9324">
                   <i className="icon-social-linkedin"></i>
                 </a>
               </li>
               <li>
-                <a className="google" href="#">
+                <a className="google" target="blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rpk.sharaj@gmail.com">
                   <i className="icon-social-google"></i>
                 </a>
               </li>

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Resume.scss";
 
-const Resume = props => {
-  const animateClass = inp => (props.activeSection === "resume" ? inp : "");
+const Resume = (props) => {
+  const animateClass = (inp) => (props.activeSection === "resume" ? inp : "");
   return (
     <>
       <div className="container flex_direction_column">
@@ -14,31 +14,30 @@ const Resume = props => {
             </li>
             <li
               className={`${animateClass("fadeInLeft")}`}
-              style={{ paddingTop: "50px" }}
+              style={{ paddingTop: "100px" }}
             >
               <div className="content-text">
-                <h3 className="line-title">Bsc In CSE - Yale University</h3>
-                <span>2012 - 2016</span>
+                <h3 className="line-title">BE In ECE - Anna University</h3>
+                <span>2006 - 2010</span>
                 <p className="line-text">
-                  Expenses as material breeding insisted building to in.
-                  Continual so distrusts pronounce by unwilling listening. Thing
-                  do taste on we manor.
+                  Completed BE in Electronics and Communications Engineering
+                  (ECE) in Jerusalem college of engineering chennai with{" "}
+                  <strong>first class distinction(80%)</strong>
                 </p>
               </div>
             </li>
             <li
               className={`${animateClass("fadeInRight")}`}
-              style={{ paddingTop: "50px", paddingBotton: "75px" }}
+              style={{ paddingTop: "150px", paddingBotton: "75px" }}
             >
               <div className="content-text">
                 <h3 className="line-title">
-                  Secondary School - Labratory High School
+                  Secondary School - Sri Sankara Vidyalaya
                 </h3>
-                <span>2005 - 2010</span>
+                <span>2005 - 2006</span>
                 <p className="line-text">
-                  Expenses as material breeding insisted building to in.
-                  Continual so distrusts pronounce by unwilling listening. Thing
-                  do taste on we manor.
+                  Completed Higher secondary with{" "}
+                  <strong>first class distinction(88%).</strong>
                 </p>
               </div>
             </li>
@@ -52,34 +51,56 @@ const Resume = props => {
             </li>
             <li className={`${animateClass("fadeInRight")}`}>
               <div className="content-text">
-                <h3 className="line-title">Art Director - Tesla Inc.</h3>
-                <span>Jan 2018 - Present</span>
+                <h3 className="line-title">Senior Engineer - Nielsen.</h3>
+                <span>Sep 2019 - Present</span>
                 <p className="line-text">
-                  Expenses as material breeding insisted building to in.
-                  Continual so distrusts pronounce by unwilling listening. Thing
-                  do taste on we manor.
-                </p>
-              </div>
-            </li>
-            <li className={`${animateClass("fadeInLeft")}`}>
-              <div className="content-text">
-                <h3 className="line-title">UX/UI Designer - Samsung</h3>
-                <span>Nov 2016 - Dec 2017</span>
-                <p className="line-text">
-                  Expenses as material breeding insisted building to in.
-                  Continual so distrusts pronounce by unwilling listening. Thing
-                  do taste on we manor.
+                  Working as Senior Engineer in Nielsen chennai, TamilNadu
                 </p>
               </div>
             </li>
             <li className={`${animateClass("fadeInRight")}`}>
               <div className="content-text">
-                <h3 className="line-title">Intern UI Designer - UIdeck</h3>
-                <span>Mar 2015 - Oct 2016</span>
+                <h3 className="line-title">UI Lead - Caterpillar.</h3>
+                <span>Apr 2016 - Aug 2019</span>
                 <p className="line-text">
-                  Expenses as material breeding insisted building to in.
-                  Continual so distrusts pronounce by unwilling listening. Thing
-                  do taste on we manor.
+                  Worked as UI Lead in Caterpillar chennai, TamilNadu for 3years
+                  and 5months.
+                </p>
+              </div>
+            </li>
+            <li className={`${animateClass("fadeInLeft")}`}>
+              <div className="content-text">
+                <h3 className="line-title">
+                  Senior Software Developer - Caterpillar USA ✈️
+                </h3>
+                <span>May 2014 - Nov 2015</span>
+                <p className="line-text">
+                  Worked as senior software developer in Caterpillar Illinois,
+                  USA TamilNadu for 1years and 6months
+                </p>
+              </div>
+            </li>
+            <li className={`${animateClass("fadeInLeft")}`}>
+              <div className="content-text">
+                <h3 className="line-title">
+                  Senior Software Developer - Caterpillar chennai
+                </h3>
+                <span>Nov 2013 - Apr 2016</span>
+                <p className="line-text">
+                  Worked as senior software developer in Caterpillar chennai,
+                  TamilNadu for 6months
+                </p>
+              </div>
+            </li>
+            <li className={`${animateClass("fadeInRight")}`}>
+              <div className="content-text">
+                <h3 className="line-title">
+                  Software Engineer - HCL Technologies
+                </h3>
+                <span>Oct 2010 - Nov 2013</span>
+                <p className="line-text">
+                  Worked as software enginner in HCL Ttechnologies chennai,
+                  Tamil Nadu for 3years and 2months
                 </p>
               </div>
             </li>

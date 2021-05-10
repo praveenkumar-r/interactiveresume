@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 
-const About = props => {
+const About = (props) => {
   return (
     <>
       <div className="aboutSection">
@@ -22,20 +22,29 @@ const About = props => {
                 : "profile-wrapper"
             }
           >
-            <h3>Hi Guys!</h3>
+            <h3>
+              Hi Guys! <span class="wave">👋</span>
+            </h3>
+
             <p>
-              Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum
-              eleifend sollicitudin lacinia justo id turpis. Nec convallis
-              integer. Odio eget duis. Nulla aenean et. Blandit varius
-              sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut
-              sollicitudin. Et est a nam dolores eget itaque sagittis et
-              parturient duis est eleifend sociis rutrum odio viverra integer.
-              Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum
-              eleifend sollicitudin lacinia justo id turpis. Nec convallis
-              integer. Odio eget duis. Nulla aenean et. Blandit varius
-              sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut
-              sollicitudin. Et est a nam dolores eget itaque sagittis et
-              parturient duis est eleifend sociis rutrum odio viverra integer.
+              I have{" "}
+              <strong>
+                10+ years of experience as a software engineer, architect, and
+                team builder
+              </strong>
+              .I enjoy building everything from small business sites to rich
+              interactive webapps.
+              <span class="seperator">
+                I'm a hands-on technical leader who has built software products
+                from the ground up, run large engineering teams, and provided
+                guidance at the executive and board level. I specialize in
+                building applications specific to the business needs of my
+                clients.
+              </span>
+              <span class="mark seperator">
+                If you are a business seeking a web presence or an employer
+                looking to hire, you can get in touch with me here
+              </span>
             </p>
             <div className="about-profile">
               <ul className="admin-profile">
@@ -49,7 +58,7 @@ const About = props => {
                 </li>
                 <li>
                   <span className="pro-title"> Experience </span>{" "}
-                  <span className="pro-detail">8 Years</span>
+                  <span className="pro-detail">9+ Years</span>
                 </li>
                 <li>
                   <span className="pro-title"> Country </span>{" "}

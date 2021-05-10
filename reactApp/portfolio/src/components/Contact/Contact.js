@@ -22,7 +22,7 @@ const Contact = (props) => {
                     <i className="icon-envelope-open"></i>
                   </div>
                   <p>
-                    <a href="mailto:rpk.sharaj@tom.com">rpk.sharaj@gmail.com</a>
+                    <a target="blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rpk.sharaj@gmail.com">rpk.sharaj@gmail.com</a>
                   </p>
                 </div>
                 <div className="single-contact">
@@ -30,7 +30,7 @@ const Contact = (props) => {
                     <i className="icon-phone"></i>
                   </div>
                   <p>
-                    <a href="#">+ (91) 97910 52738</a>
+                    <a>+ (91) 97910 52738</a>
                   </p>
                 </div>
               </div>
