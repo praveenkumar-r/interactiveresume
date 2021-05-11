@@ -23,7 +23,7 @@ const About = (props) => {
             }
           >
             <h3>
-              Hi Guys! <span class="wave">👋</span>
+              Hi Guys! <span class="wave" role="img" aria-label="hi">👋</span>
             </h3>
 
             <p>
