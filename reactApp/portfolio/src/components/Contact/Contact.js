@@ -30,7 +30,7 @@ const Contact = (props) => {
                     <i className="icon-phone"></i>
                   </div>
                   <p>
-                    <a>+ (91) 97910 52738</a>
+                    <span>+ (91) 97910 52738</span>
                   </p>
                 </div>
               </div>
@@ -89,6 +89,7 @@ const Contact = (props) => {
               <a
                 style={{ marginTop: "20px" }}
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.google.com/maps/dir//12.9777781,80.143506/@12.9767117,80.1411027,17z/data=!4m2!4m1!3e0"
               >
                 <i className="icon-directions"></i>
@@ -96,6 +97,7 @@ const Contact = (props) => {
               <a
                 className="directions"
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.google.com/maps/dir//12.9777781,80.143506/@12.9767117,80.1411027,17z/data=!4m2!4m1!3e0"
               >
                 Directions
