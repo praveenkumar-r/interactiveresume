@@ -4,15 +4,7 @@ const uri = "mongodb+srv://rajenpk:Mapr4567@prawin-1pj0p.mongodb.net/test?retryW
 const client = new MongoClient(uri, { useNewUrlParser: true })
 const nodemailer = require("nodemailer");
 const app = express();
-
 app.use(express.static('public'));
-app.use(
-  express.urlencoded({
-    extended: true
-  })
-)
-
-app.use(express.json())
 
 app.get('/timestamp', (req, res) => {
   client.connect(err => {
