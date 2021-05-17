@@ -7,17 +7,17 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get('/timestamp',(req,res)=>{
-	client.connect(err => {
-            collection = client.db("Profile").collection("personaldetails");
-			collection.find({}).toArray((error, result) => {
-				if(error) {
-					console.log(error);
-				}
-				console.log(result);
-				res.send(result);
-			});
-        });
+app.get('/timestamp', (req, res) => {
+  client.connect(err => {
+    collection = client.db("Profile").collection("personaldetails");
+    collection.find({}).toArray((error, result) => {
+      if (error) {
+        console.log(error);
+      }
+      console.log(result);
+      res.send(result);
+    });
+  });
 });
 
 const transporter = nodemailer.createTransport({
@@ -31,26 +31,24 @@ const transporter = nodemailer.createTransport({
 
 
 app.post("/send", (req, res) => {
-    //2. You can configure the object however you want
-    const mailOptions = {
-     from: "rpk.sharaj@gmail.com",
-     to: "rpk.sharaj@gmail.com",
-     subject: "Node.js Email with Secure OAuth",
-     generateTextFromHTML: true,
-     html: "<b>test</b>"
-	};
+  //2. You can configure the object however you want
+  const mailOptions = {
+    from: "rpk.sharaj@gmail.com",
+    to: "rpk.sharaj@gmail.com",
+    subject: "Node.js Email with Secure OAuth",
+    generateTextFromHTML: true,
+    html: "<b>test</b>"
+  };
 
-    //3.
-    transporter.sendMail(mailOptions, (err, data) => {
-      if (err) {
-        console.log(err);
-        res.status(500).send("Something went wrong.");
-      } else {
-        res.status(200).send("Email successfully sent to recipient!");
-      }
-    });
+  //3.
+  transporter.sendMail(mailOptions, (err, data) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send("Something went wrong.");
+    } else {
+      res.status(200).send("Email successfully sent to recipient!");
+    }
   });
 });
-Let'
 
-app.listen(process.env.PORT || 8000,()=>{ console.log('server running');})
+app.listen(process.env.PORT || 8000, () => { console.log('server running'); })
