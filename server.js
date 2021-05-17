@@ -5,6 +5,13 @@ const client = new MongoClient(uri, { useNewUrlParser: true })
 const nodemailer = require("nodemailer");
 const app = express();
 app.use(express.static('public'));
+app.use(
+  express.urlencoded({
+    extended: true
+  })
+)
+
+app.use(express.json())
 
 app.get('/timestamp', (req, res) => {
   client.connect(err => {
