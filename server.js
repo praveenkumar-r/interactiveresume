@@ -6,6 +6,13 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 app.use(express.static('public'));
+app.use(
+  express.urlencoded({
+    extended: true
+  })
+)
+
+app.use(express.json())
 
 app.get('/timestamp', (req, res) => {
   client.connect(err => {
@@ -21,23 +28,35 @@ app.get('/timestamp', (req, res) => {
 });
 
 const transporter = nodemailer.createTransport({
-  host: "gmail", //replace with your email provider
+  host: "smtp.gmail.com", //replace with your email provider
   port: 587,
   auth: {
-    user: 'rpk.sharaj@gmail.com',
-    pass: 'rpksharaj89',
+    user: 'prawinmeetme@gmail.com',
+    pass: 'rpksharaj*89',
   },
+});
+
+transporter.verify(function (error, success) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log("Server is ready to take our messages");
+  }
 });
 
 
 app.post("/send", (req, res) => {
+  console.log('req mail', req.body);
+  console.log('req params', req.params);
+  // console.log('request', req);
   //2. You can configure the object however you want
+  const html = "<b>" + req.body.name + "</b>";
   const mailOptions = {
-    from: "rpk.sharaj@gmail.com",
-    to: "rpk.sharaj@gmail.com",
+    from: "prawinmeetme@gmail.com",
+    to: "prawinmeetme@gmail.com",
     subject: "Node.js Email with Secure OAuth",
     generateTextFromHTML: true,
-    html: "<b>test</b>"
+    html: html
   };
 
   //3.
