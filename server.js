@@ -50,13 +50,14 @@ transporter.verify(function (error, success) {
 app.post("/send", (req, res) => {
   console.log('req mail', req.body);
   console.log('req params', req.params);
+  const mailData = req.body.item;
   // console.log('request', req);
   //2. You can configure the object however you want
-  const html = "<b>" + req.body.name + "</b>";
+  const html = "From " + req.body.name + ",\n<b>" + req.body.message + "</b>";
   const mailOptions = {
-    from: "prawinmeetme@gmail.com",
+    from: mailData.email,
     to: "prawinmeetme@gmail.com",
-    subject: "Node.js Email with Secure OAuth",
+    subject: mailData.subject,
     generateTextFromHTML: true,
     html: html
   };
