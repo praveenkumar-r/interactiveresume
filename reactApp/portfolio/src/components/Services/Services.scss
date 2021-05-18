@@ -54,7 +54,7 @@
       .card {
         background: var(--serviceCardColor);
         border-radius: 4px;
-        padding: 48px 20px;
+        padding: 20px 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         text-align: center;
         transition: all 0.3s ease-in-out 0s;
@@ -62,7 +62,6 @@
         .card-icon {
           margin-bottom: 15px;
           text-align: center;
-          width: 48px;
           display: block;
           margin: 0 auto;
           color: #00b4d9;
@@ -78,12 +77,50 @@
           }
         }
 
+        .two-step{
+          .first{
+            margin-top:30px !important;
+          }
+          .second{
+            margin-top: 20px !important;
+            margin-bottom: 15px !important;
+          }
+          .header{
+            width:55% !important;
+          }
+          .value{
+            width:25% !important;
+          }
+        }
+
         .card-content {
           color: var(--primaryfontColor);
+          width: 230px;
           h3 {
             font-size: 15px;
             text-transform: uppercase;
             margin-bottom: 3px;
+          }
+          .content{
+            font-weight: 400;
+            font-family: source sans pro, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+            margin:10px 0;
+            .header{
+              display: inline-block;
+              width: 60%;
+            }
+            .delimiter{
+              display: inline-block;
+              width: 5%;
+            }
+            .value{
+              display: inline-block;
+              width: 20%;
+            }
           }
         }
       }
@@ -99,7 +136,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 5));
+      transform: translateX(calc(-250px * 10));
     }
   }
   .slider {
@@ -109,7 +146,7 @@
     width: 80%;
   }
   .slider .slide-track {
-    width: calc(250px * 10);
+    width: calc(250px * 20);
   }
 
   .slide-track:hover {

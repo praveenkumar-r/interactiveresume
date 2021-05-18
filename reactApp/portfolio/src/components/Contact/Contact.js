@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.scss";
 import Map from "../Map/Map";
+import { sendMessage } from "../../services/service";
+
+const initialState = {
+  name: "",
+  email: "",
+  subject: "",
+  message: ""
+};
 
 const Contact = (props) => {
+  const [
+    formstate,
+    setformState
+  ] = useState(initialState);
+
+  const clearState = () => {
+    setformState({ ...initialState });
+  };
+
+  const handleInputChange = e => {
+    const { name, value } = e.target;
+    setformState(formstate => ({ ...formstate, [name]: value }));
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log(formstate);
+    clearState();
+    // console.log()
+    sendMessage(formstate).then(clearState);
+  };
+
+
   return (
     <>
       <div className="container">
@@ -38,22 +69,25 @@ const Contact = (props) => {
             </div>
 
             <h2>Contact Form</h2>
-            <form id="contactForm">
+            <form id="contactForm" onSubmit={handleSubmit}>
               <div className="form-container">
                 <div className="form-group-split">
                   <input
                     className="form-control"
                     type="text"
-                    required
                     placeholder="Name"
+                    onChange={handleInputChange}
+                    name="name"
+                    value={formstate.name} required
                   ></input>
                 </div>
                 <div className="form-group-split">
                   <input
                     className="form-control"
                     type="text"
-                    required
+                    onChange={handleInputChange} value={formstate.email} required
                     placeholder="Email"
+                    name="email"
                     style={{ float: "right" }}
                   ></input>
                 </div>
@@ -61,8 +95,9 @@ const Contact = (props) => {
                   <input
                     id="subject"
                     type="text"
-                    required
+                    onChange={handleInputChange} value={formstate.subject} required
                     placeholder="Subject"
+                    name="subject"
                     className="form-control"
                   ></input>
                 </div>
@@ -70,6 +105,8 @@ const Contact = (props) => {
                   <textarea
                     className="form-control"
                     placeholder="Your Message"
+                    name="message"
+                    onChange={handleInputChange} value={formstate.message} required
                     style={{ minHeight: "75px" }}
                   ></textarea>
                   <button className="submit btn">Send Message</button>
