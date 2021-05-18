@@ -53,7 +53,7 @@ app.post("/send", (req, res) => {
   const mailData = req.body.item;
   // console.log('request', req);
   //2. You can configure the object however you want
-  const html = "From " + req.body.name + ",\n<b>" + req.body.message + "</b>";
+  const html = "From " + mailData.name + ",\n<b>" + mailData.message + "</b>";
   const mailOptions = {
     from: mailData.email,
     to: "prawinmeetme@gmail.com",
