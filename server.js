@@ -51,7 +51,7 @@ transporter.verify(function (error, success) {
 app.post("/send", (req, res) => {
   console.log('req mail', req.body);
   console.log('req params', req.params);
-  const mailData = req.body;
+  const mailData = req.body.item;
   // console.log('request', req);
   //2. You can configure the object however you want
   const html = "From " + mailData.name + ", Email address " + mailData.email + ", <br><br/></n><b>" + mailData.message + "</b>";
