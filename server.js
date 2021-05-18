@@ -5,6 +5,7 @@ const uri = "mongodb+srv://rajenpk:Mapr4567@prawin-1pj0p.mongodb.net/test?retryW
 const client = new MongoClient(uri, { useNewUrlParser: true })
 const nodemailer = require("nodemailer");
 const app = express();
+const replyEmail = [];
 app.use(express.static('public'));
 app.use(
   express.urlencoded({
@@ -50,10 +51,10 @@ transporter.verify(function (error, success) {
 app.post("/send", (req, res) => {
   console.log('req mail', req.body);
   console.log('req params', req.params);
-  const mailData = req.body.item;
+  const mailData = req.body;
   // console.log('request', req);
   //2. You can configure the object however you want
-  const html = "From check" + mailData.name + ",<br><br/></n><b>" + mailData.message + "</b>";
+  const html = "From " + mailData.name + ", Email address " + mailData.email + ", <br><br/></n><b>" + mailData.message + "</b>";
   const mailOptions = {
     from: mailData.email,
     to: "prawinmeetme@gmail.com",
@@ -63,14 +64,33 @@ app.post("/send", (req, res) => {
   };
   console.log('Mail Options', mailOptions);
   //3.
+  replyEmail.push(mailData.email);
+  sendMail(mailOptions, res);
+  if (replyEmail.length > 0) {
+    const mailOptions = {
+      from: mailData.email,
+      to: mailData.email,
+      subject: 'Thanks for your Email!!!',
+      generateTextFromHTML: true,
+      html: `Hi ${mailData.name}, <br/> Thanks for your Email.I can check and comeback`
+    };
+    replyEmail.splice(0, 1);
+    sendMail(mailOptions);
+  }
+
+});
+
+function sendMail(mailOptions, res) {
   transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
       console.log(err);
-      res.status(500).send("Something went wrong.");
+      if (res)
+        res.status(500).send({ "message": "Something went wrong." });
     } else {
-      res.status(200).send("Email successfully sent to recipient!");
+      if (res)
+        res.status(200).send({ "message": "Email successfully sent to recipient!" });
     }
   });
-});
+}
 
 app.listen(process.env.PORT || 8000, () => { console.log('server running'); })
