@@ -11,7 +11,9 @@ app.use(
   })
 )
 
-app.use(express.json())
+app.use(express.json());
+
+app.use(cors());
 
 app.get('/timestamp', (req, res) => {
   client.connect(err => {
