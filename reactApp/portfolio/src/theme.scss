@@ -17,6 +17,7 @@
   @extend .serviceSection-light;
   @extend .resumeSection-light;
   @extend .contact-light;
+  @extend .work-light;
 }
 
 #main[data-theme="dark"] {
@@ -68,8 +69,13 @@
   --resumeContextLinecolor: #fff;
 }
 
+.work-light {
+  --cardfontcolor: #fff;
+}
+
 .work-dark {
   --cardFrontImgBckGround: #917070;
+  --cardfontcolor: #ffffffd6;
 }
 
 .contact-dark {

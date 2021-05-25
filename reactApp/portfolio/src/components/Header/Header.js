@@ -56,6 +56,18 @@ const Header = props => {
                 >
                   Contact
                 </a>
+                <a
+                  className={props.activeSection === "testimonials" ? "active" : ""}
+                  href="#testimonials"
+                >
+                  Testimonials
+                </a>
+                <a
+                  className={props.activeSection === "feedback" ? "active" : ""}
+                  href="#feedback"
+                >
+                  Feedback
+                </a>
               </li>
             </ul>
           </div>
@@ -116,6 +128,18 @@ const Header = props => {
                 href="#contact"
               >
                 Contact
+              </a>
+              <a
+                className={props.activeSection === "testimonials" ? "active" : ""}
+                href="#testimonials"
+              >
+                Testimonials
+              </a>
+              <a
+                className={props.activeSection === "feedback" ? "active" : ""}
+                href="#feedback"
+              >
+                Feedback
               </a>
             </li>
           </ul>

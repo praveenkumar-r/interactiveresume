@@ -9,8 +9,10 @@ import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
+import Testimonials from "./components/Testimonials/Testimonials"
 import Resume from "./components/Resume/Resume";
 import Work from "./components/Work/Work";
+import Feedback from "./components/Feedback/Feedback";
 
 var newWindow;
 function App() {
@@ -56,8 +58,11 @@ function App() {
     const [width, height, orientation] = arg;
     if (width !== "100%") {
       if (!newWindow) {
+        let window_url = "http://praveenkumar-resume.netlify.app"
+        if (window.location.host.includes('local'))
+          window_url = "http://localhost:3000";
         newWindow = window.open(
-          "http://localhost:3000",
+          window_url,
           "_blank",
           "scrollbars=yes,resizable=no,translate=no,menubar=no,toolbar=no,left=200"
         );
@@ -145,6 +150,7 @@ function App() {
               className="mobileportrait"
               title="View Mobile Portrait (355x480)"
             ></a>
+
           </div>
           <div className="settingsIconHolder" onClick={settingsToggle}>
             <div className="icon-settings settingsIcon"></div>
@@ -195,10 +201,26 @@ function App() {
           id="contact"
           ref={(ref) => {
             ref != null && itemsRef.current.push(ref);
-            itemsRef.current = itemsRef.current.slice(0, 6);
           }}
         >
           <Contact activeSection={activeSection} theme={theme} />
+        </section>
+        <section
+          id="testimonials"
+          ref={(ref) => {
+            ref != null && itemsRef.current.push(ref);
+          }}
+        >
+          <Testimonials activeSection={activeSection} theme={theme} />
+        </section>
+        <section
+          id="feedback"
+          ref={(ref) => {
+            ref != null && itemsRef.current.push(ref);
+            itemsRef.current = itemsRef.current.slice(0, 8);
+          }}
+        >
+          <Feedback activeSection={activeSection} theme={theme} />
         </section>
       </div>
     </>

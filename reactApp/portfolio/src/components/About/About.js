@@ -58,7 +58,7 @@ const About = (props) => {
                 </li>
                 <li>
                   <span className="pro-title"> Experience </span>{" "}
-                  <span className="pro-detail">9+ Years</span>
+                  <span className="pro-detail">10+ Years</span>
                 </li>
                 <li>
                   <span className="pro-title"> Country </span>{" "}
@@ -82,7 +82,7 @@ const About = (props) => {
                 </li>
               </ul>
             </div>
-            <a href="#resume" className="btn">
+            <a href="../../assets/Praveenkumar_Resume.pdf" download className="btn">
               <i className="icon-paper-clip"></i> Download Resume
             </a>
             <a href="#contact" className="btn btn-danger">

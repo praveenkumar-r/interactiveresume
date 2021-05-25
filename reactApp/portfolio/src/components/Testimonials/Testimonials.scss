@@ -1,0 +1,127 @@
+#testimonials {
+    background: var(--oddbackgroundImg);
+    background-attachment: fixed;
+    padding: 60px 0;
+    padding-bottom: 0;
+    padding-top: 70px;
+    .container{
+      padding-bottom: 50px;
+      .section-title {
+        color: var(--serviceTitleColor);
+        font-size: 38px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1;
+        padding: 0 10px;
+        position: relative;
+      }
+      #recommendation{
+        height: 450px;
+        ul{
+          display: flex;
+          justify-content: center;
+          height: inherit;
+          li{
+            width: 30%;
+            background: white;
+            border-radius: 5%;
+            display: block;
+            transition: all 0.6s ease 0s;
+            position: absolute;
+            .recommendations__item{
+              display: flex;
+              flex-direction: column;
+              .recommendations__text-wrapper{
+                display: flex;
+                justify-content: center;
+                font-size: 15px;
+                padding: 16px;
+                font-weight: bold;
+                font-style: italic;
+                flex-direction: row;
+                .testimonial_icon{
+                  color: #dd3333;
+                  font-size: 50px;
+                  padding-right: 10px;
+                }
+                .recommendation-text{
+                  padding-top:20px;
+                }
+              }
+              .recommendations__header{
+                display: flex;
+                padding: 10px;
+                .recommendations__detail{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                  padding: 0 10px;
+                  .recommendation_name{
+                    font-size: 18px;
+                    font-weight: bold;
+                    width: 90%;
+                  }
+                  .recommendations__headline{
+                    font-size: 10px;
+                    line-height: 12px;
+                    padding-left: 10px;
+                  }
+                }
+                .profile_img{
+                  display: inline-block;
+                  position: relative;
+                  width: 75%;
+                  overflow: hidden;
+                  border-radius: 50%;
+                  img{
+                    width: auto;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+            
+          }
+          .left{
+            background: black;
+            opacity: 0.5;
+            transform: translate(-55%,0%) scale(0.9);
+          }
+          .right{
+            background: black;
+            opacity: 0.5;
+            transform: translate(55%, 0%) scale(0.9);
+          }
+          .active{
+            z-index: 50;
+            box-shadow: #00000066 30px 0px 20px -20px, #00000066 -30px 0px 20px -20px;
+          }
+          .disabled{
+            display: none;
+          }
+        }
+        .slider{
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          align-items: center;
+          margin: auto;
+          left: 50%;
+          .dot{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: black;
+            opacity: 0.5;
+            margin: 5px;
+          }
+          .active{
+            opacity: 1  !important;
+          }
+        }
+      }
+    }
+
+  }
+  

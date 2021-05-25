@@ -38,6 +38,85 @@
             border-radius: 15px;
             backface-visibility: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            .header{
+              height: 30%;
+              background: #0066B3;
+              border-radius: 15px 15px 0 0;
+            }
+            .logo{
+              position: absolute;
+              width: 100px;
+              height: 100px;
+              background: white;
+              border-radius: 50%;
+              top: 10%;
+              left: 30%;
+              padding: 5px;
+              .fforwardlog{
+                margin-top: 15%  !important;
+                margin-left: 15% !important;
+                width: 70% !important;
+              }
+              .fforwardlogo{
+                background: #00BCAD;
+                border-radius: 50%;
+                height: 100%;
+                img{
+                  margin-top: 15% !important;
+                  margin-left: 15% !important;
+                  width: 70% !important;
+                }
+              }
+              .CatLogo{
+                border-radius: 50%;
+                height: 100%;
+                border: 2px solid #F6D000;
+                img{
+                  margin-top: 28%;
+                  margin-left: 7.5%;
+                  width: 85% !important;
+                }
+              }
+              .nielsenlogo{
+                border-radius: 50%;
+                height: 100%;
+                background: black;
+                img{
+                  margin-top: 15%;
+                  margin-left: 15%;
+                  width: 70% !important;
+                }
+              }
+            }
+            .description{
+              height: 70%;
+              background: white;
+              background: var(--cardfontcolor);
+              border-radius: 0 0 15px 15px;
+              .panelholder{
+                height: 18%;
+                padding: 15% 10px 0px 10px;
+                .panelkey{
+                  float: left;
+                  margin-right: 10px;
+                  width: 40%;
+                  font-style: italic;
+                }
+                .panelkey::after{
+                  content: ":";
+                  float:right;
+                  font-style:normal;
+                }
+                .panelvalue{
+                  float: left;
+                  width: 55%;
+                  font-weight: bold;
+                }
+              }
+              .adjustpadding{
+                padding: 0 10px 0px 10px !important;
+              }
+            }
             .projImg {
               height: 60%;
               overflow: hidden;
@@ -81,7 +160,27 @@
             border-radius: 15px;
             top: 0;
             left: 0;
-            color: #fff;
+            color: black;
+            .panelHeader{
+              font-weight: bold;
+            }
+            .panelpadding{
+              padding: 5px 10px 0 10px;
+            }
+            .panelContent{
+              font-size: 12px;
+              padding: 0 10px 0 15px;
+              line-height: 20px;
+              font-family: 'Roboto';
+            }
+            .panelDescription{
+              font-size: 12px;
+              padding: 0 10px 0 15px;
+              line-height: 20px;
+              span{
+                display: inline-block;
+              }
+            }
             h3 {
               font-size: 23px;
               padding-top: 10%;
@@ -118,9 +217,10 @@
         }
       }
       .toggle {
-        left: 0;
+        right: 0;
         opacity: 0;
         transition: all 0.5s;
+        bottom: -8px;
       }
     }
   }

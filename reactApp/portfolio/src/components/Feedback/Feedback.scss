@@ -1,0 +1,22 @@
+#testimonials {
+    background: var(--oddbackgroundImg);
+    background-attachment: fixed;
+    padding: 60px 0;
+    padding-bottom: 0;
+    padding-top: 70px;
+    .container{
+      padding-bottom: 50px;
+      .section-title {
+        color: var(--serviceTitleColor);
+        font-size: 38px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1;
+        padding: 0 10px;
+        position: relative;
+      }
+
+    }
+
+  }
+  
