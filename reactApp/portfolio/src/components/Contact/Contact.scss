@@ -128,3 +128,10 @@
     }
   }
 }
+
+/** For mobile **/
+@media only screen and (max-width: 768px) {
+  .map-block{
+    flex: auto !important;
+  }
+}
