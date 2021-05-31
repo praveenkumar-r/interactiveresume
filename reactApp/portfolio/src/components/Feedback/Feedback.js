@@ -1,8 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Feedback.scss";
+import { saveFeedback } from "../../services/service";
+const initialState = {
+    name: "",
+    message: "",
+    portfolio_rating: "",
+    htmlcss3_rating: "",
+    javascript_rating: "",
+    angular_rating: "",
+    react_rating: ""
+};
 
 const Feedback = () => {
+    const [
+        formstate,
+        setformState
+    ] = useState(initialState);
 
+    const clearState = () => {
+        setformState({ ...initialState });
+    };
+
+    const handleInputChange = e => {
+        let { name, value, checked } = e.target;
+        if (checked)
+            value = e.target.id.substr(-1);
+        setformState(formstate => ({ ...formstate, [name]: value }));
+    };
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        console.log(formstate);
+        clearState();
+        // console.log()
+        saveFeedback(formstate).then(clearState);
+    };
     return (
         <>
             <div className="container">
@@ -10,91 +42,94 @@ const Feedback = () => {
                 <div className="feedbackContainer">
                     <div className="feedbackForm">
                         <p>Please give your feedback</p>
-                        <div className="form-control-panel mt-15">
-                            <input type="text" placeholder="Name" name="name" required="" value="" />
-                        </div>
-                        <div className="form-control-panel">
-                            <textarea className="form-control" placeholder="Your Message" name="message" required=""></textarea>
-                        </div>
-                        <div className="form-control-panel">
-                            <div>Rate my portfolio</div>
-                            <div className="rate">
-                                <input type="radio" id="rating_star5" name="rating" />
-                                <label for="rating_star5" title="text" ></label>
-                                <input type="radio" id="rating_star4" name="rating" />
-                                <label for="rating_star4" title="text" ></label>
-                                <input type="radio" id="rating_star3" name="rating" />
-                                <label for="rating_star3" title="text" ></label>
-                                <input type="radio" id="rating_star2" name="rating" />
-                                <label for="rating_star2" title="text" ></label>
-                                <input type="radio" id="rating_star1" name="rating" />
-                                <label for="rating_star1" title="text" ></label>
+                        <form id="contactForm" onSubmit={handleSubmit}>
+                            <div className="form-control-panel mt-15">
+                                <input type="text" placeholder="Name" value={formstate.name} name="name" required onChange={handleInputChange} />
                             </div>
-                        </div>
-                        <div class="form-control-panel bold">Rate My Skill</div>
-                        <div className="form-control-panel ml-20 mt-15">
-                            HTML5, CSS3
-                            <div className="rate">
-                                <input type="radio" id="html_css_star5" name="html_css_" />
-                                <label for="html_css_star5" title="text" ></label>
-                                <input type="radio" id="html_css_star4" name="html_css" />
-                                <label for="html_css_star4" title="text" ></label>
-                                <input type="radio" id="html_css_star3" name="html_css" />
-                                <label for="html_css_star3" title="text" ></label>
-                                <input type="radio" id="html_css_star2" name="html_css" />
-                                <label for="html_css_star2" title="text" ></label>
-                                <input type="radio" id="html_css_star1" name="html_css" />
-                                <label for="html_css_star1" title="text" ></label>
+                            <div className="form-control-panel">
+                                <textarea className="form-control" value={formstate.message} placeholder="Your Message" name="message" required onChange={handleInputChange}></textarea>
                             </div>
-                        </div>
-                        <div className="form-control-panel ml-20 mt-15">
-                            JAVASCRIPT
-                            <div className="rate">
-                                <input type="radio" id="javascript_star5" name="javascript" />
-                                <label for="javascript_star5" title="text" ></label>
-                                <input type="radio" id="javascript_star4" name="javascript" />
-                                <label for="javascript_star4" title="text" ></label>
-                                <input type="radio" id="javascript_star3" name="javascript" />
-                                <label for="javascript_star3" title="text" ></label>
-                                <input type="radio" id="javascript_star2" name="javascript" />
-                                <label for="javascript_star2" title="text" ></label>
-                                <input type="radio" id="javascript_star1" name="javascript" />
-                                <label for="javascript_star1" title="text" ></label>
+                            <div className="form-control-panel">
+                                <div>Rate my portfolio</div>
+                                <div className="rate">
+                                    <input type="radio" id="rating_star5" name="portfolio_rating" onClick={handleInputChange} />
+                                    <label for="rating_star5" title="text" ></label>
+                                    <input type="radio" id="rating_star4" name="portfolio_rating" onClick={handleInputChange} />
+                                    <label for="rating_star4" title="text" ></label>
+                                    <input type="radio" id="rating_star3" name="portfolio_rating" onClick={handleInputChange} />
+                                    <label for="rating_star3" title="text" ></label>
+                                    <input type="radio" id="rating_star2" name="portfolio_rating" onClick={handleInputChange} />
+                                    <label for="rating_star2" title="text" ></label>
+                                    <input type="radio" id="rating_star1" name="portfolio_rating" onClick={handleInputChange} />
+                                    <label for="rating_star1" title="text" ></label>
+                                </div>
                             </div>
-                        </div>
-                        <div className="form-control-panel ml-20 mt-15">
-                            ANGULAR
+                            <div class="form-control-panel bold">Rate My Skill</div>
+                            <div className="form-control-panel ml-20 mt-15">
+                                HTML5, CSS3
                             <div className="rate">
-                                <input type="radio" id="angular_star5" name="angular" />
-                                <label for="angular_star5" title="text" ></label>
-                                <input type="radio" id="angular_star4" name="angular" />
-                                <label for="angular_star4" title="text" ></label>
-                                <input type="radio" id="angular_star3" name="angular" />
-                                <label for="angular_star3" title="text" ></label>
-                                <input type="radio" id="angular_star2" name="angular" />
-                                <label for="angular_star2" title="text" ></label>
-                                <input type="radio" id="angular_star1" name="angular" />
-                                <label for="angular_star1" title="text" ></label>
+                                    <input type="radio" id="html_css_star5" name="htmlcss3_rating" onClick={handleInputChange} />
+                                    <label for="html_css_star5" title="text" ></label>
+                                    <input type="radio" id="html_css_star4" name="htmlcss3_rating" onClick={handleInputChange} />
+                                    <label for="html_css_star4" title="text" ></label>
+                                    <input type="radio" id="html_css_star3" name="htmlcss3_rating" onClick={handleInputChange} />
+                                    <label for="html_css_star3" title="text" ></label>
+                                    <input type="radio" id="html_css_star2" name="htmlcss3_rating" onClick={handleInputChange} />
+                                    <label for="html_css_star2" title="text" ></label>
+                                    <input type="radio" id="html_css_star1" name="htmlcss3_rating" onClick={handleInputChange} />
+                                    <label for="html_css_star1" title="text" ></label>
+                                </div>
                             </div>
-                        </div>
-                        <div className="form-control-panel ml-20 mt-15">
-                            REACT
+                            <div className="form-control-panel ml-20 mt-15">
+                                JAVASCRIPT
                             <div className="rate">
-                                <input type="radio" id="react_star5" name="react" />
-                                <label for="react_star5" title="text" ></label>
-                                <input type="radio" id="react_star4" name="react" />
-                                <label for="react_star4" title="text" ></label>
-                                <input type="radio" id="react_star3" name="react" />
-                                <label for="react_star3" title="text" ></label>
-                                <input type="radio" id="react_star2" name="react" />
-                                <label for="react_star2" title="text" ></label>
-                                <input type="radio" id="react_star1" name="react" />
-                                <label for="react_star1" title="text" ></label>
+                                    <input type="radio" id="javascript_star5" name="javascript_rating" onClick={handleInputChange} />
+                                    <label for="javascript_star5" title="text" ></label>
+                                    <input type="radio" id="javascript_star4" name="javascript_rating" onClick={handleInputChange} />
+                                    <label for="javascript_star4" title="text" ></label>
+                                    <input type="radio" id="javascript_star3" name="javascript_rating" onClick={handleInputChange} />
+                                    <label for="javascript_star3" title="text" ></label>
+                                    <input type="radio" id="javascript_star2" name="javascript_rating" onClick={handleInputChange} />
+                                    <label for="javascript_star2" title="text" ></label>
+                                    <input type="radio" id="javascript_star1" name="javascript_rating" onClick={handleInputChange} />
+                                    <label for="javascript_star1" title="text" ></label>
+                                </div>
                             </div>
-                        </div>
-                        <div className="form-control-panel mt-15" style={{ "justifyContent": "center" }}>
-                            <button className="submit btn">Submit</button>
-                        </div>
+                            <div className="form-control-panel ml-20 mt-15">
+                                ANGULAR
+                            <div className="rate">
+                                    <input type="radio" id="angular_star5" name="angular_rating" onClick={handleInputChange} />
+                                    <label for="angular_star5" title="text" ></label>
+                                    <input type="radio" id="angular_star4" name="angular_rating" onClick={handleInputChange} />
+                                    <label for="angular_star4" title="text" ></label>
+                                    <input type="radio" id="angular_star3" name="angular_rating" onClick={handleInputChange} />
+                                    <label for="angular_star3" title="text" ></label>
+                                    <input type="radio" id="angular_star2" name="angular_rating" onClick={handleInputChange} />
+                                    <label for="angular_star2" title="text" ></label>
+                                    <input type="radio" id="angular_star1" name="angular_rating" onClick={handleInputChange} />
+                                    <label for="angular_star1" title="text" ></label>
+                                </div>
+                            </div>
+                            <div className="form-control-panel ml-20 mt-15">
+                                REACT
+                            <div className="rate">
+                                    <input type="radio" id="react_star5" name="react_rating" onClick={handleInputChange} />
+                                    <label for="react_star5" title="text" ></label>
+                                    <input type="radio" id="react_star4" name="react_rating" onClick={handleInputChange} />
+                                    <label for="react_star4" title="text" ></label>
+                                    <input type="radio" id="react_star3" name="react_rating" onClick={handleInputChange} />
+                                    <label for="react_star3" title="text" ></label>
+                                    <input type="radio" id="react_star2" name="react_rating" onClick={handleInputChange} />
+                                    <label for="react_star2" title="text" ></label>
+                                    <input type="radio" id="react_star1" name="react_rating" onClick={handleInputChange} />
+                                    <label for="react_star1" title="text" ></label>
+                                </div>
+                            </div>
+                            <div className="form-control-panel mt-15" style={{ "justifyContent": "center" }}>
+                                <button className="submit btn">Submit</button>
+                            </div>
+
+                        </form>
 
                     </div>
                     <div className="feedbackList">

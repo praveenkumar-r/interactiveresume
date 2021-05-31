@@ -39,7 +39,7 @@ app.post('/feedback', (req, res) => {
     if (err)
       return response.status(500).send(err);
     console.log("1 document inserted");
-    res.send({ "message": "Feedback added succesfully!!!" });
+    res.send(result.result);
   });
 });
 

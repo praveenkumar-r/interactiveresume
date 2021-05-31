@@ -78,7 +78,8 @@ const Contact = (props) => {
                     placeholder="Name"
                     onChange={handleInputChange}
                     name="name"
-                    value={formstate.name} required
+                    value={formstate.name}
+                    required
                   ></input>
                 </div>
                 <div className="form-group-split">

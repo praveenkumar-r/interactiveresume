@@ -8,3 +8,24 @@ export function sendMessage(item) {
     })
         .then(data => data.json())
 }
+
+export function getFeedback(item) {
+    return fetch('https://app1-portfolio.herokuapp.com/feedback', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+        .then(data => data.json())
+}
+
+export function saveFeedback(item) {
+    return fetch('https://app1-portfolio.herokuapp.com/feedback', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ item })
+    })
+        .then(data => data.json())
+}
