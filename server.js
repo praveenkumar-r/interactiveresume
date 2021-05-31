@@ -34,8 +34,8 @@ app.get('/timestamp', (req, res) => {
 
 app.post('/feedback', (req, res) => {
   collection = clientDB.collection("feedback");
-  console.log('myobj', req.body);
-  collection.insertOne(req.body, (err, result) => {
+  console.log('myobj', req.body.item);
+  collection.insertOne(req.body.item, (err, result) => {
     if (err)
       return response.status(500).send(err);
     console.log("1 document inserted");
