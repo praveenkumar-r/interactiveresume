@@ -17,6 +17,24 @@
       .feedbackContainer{
         display: flex;
         flex-direction: row;
+        .thanks{
+          height: 580px;
+          width: 34.5%;
+          background: black;
+          position: absolute;
+          z-index: 100;
+          opacity: 0.8;
+          transition: all 0.5s linear;
+          border-radius: 10px;
+          .message{
+            position: absolute;
+            color: #fff;
+            z-index: 101;
+            font-size: 20px;
+            top: 45%;
+            left: 80px;
+          }
+        }
         .feedbackForm{
           width: 40%;
           margin-right: 20px;
@@ -24,6 +42,7 @@
           box-shadow: var(--contactBoxShadow);
           background: var(--contackbckgroundColor);
           border-radius: 10px;
+          
           p{
             margin-top: 10px;
             font-size: 11px;
@@ -228,6 +247,7 @@
       width: 98% !important;
       margin-right: 0 !important;
       padding: 9px !important;
+
     }
     .feedbackList{
       width: 100% !important;
@@ -242,6 +262,16 @@
   }
 }
 
+
+.none{
+  opacity: 0;
+  display: none;
+  transition: all 0.5s linear;
+}
+
+.active{
+  color:orange;
+}
 
 
   
