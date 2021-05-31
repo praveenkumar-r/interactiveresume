@@ -17,9 +17,11 @@ app.use(express.json());
 
 app.use(cors());
 
+var clientDB = "";
+
 app.get('/timestamp', (req, res) => {
   client.connect(err => {
-    collection = client.db("Profile").collection("personaldetails");
+    collection = clientDB.collection("personaldetails");
     collection.find({}).toArray((error, result) => {
       if (error) {
         console.log(error);
@@ -27,6 +29,28 @@ app.get('/timestamp', (req, res) => {
       console.log(result);
       res.send(result);
     });
+  });
+});
+
+app.post('/feedback', (req, res) => {
+  collection = clientDB.collection("feedback");
+  console.log('myobj', req.body);
+  collection.insertOne(req.body, (err, result) => {
+    if (err)
+      return response.status(500).send(err);
+    console.log("1 document inserted");
+    res.send({ "message": "Feedback added succesfully!!!" });
+  });
+});
+
+app.get('/feedback', (req, res) => {
+  collection = clientDB.collection("feedback");
+  collection.find({}).toArray((error, result) => {
+    if (error) {
+      console.log(error);
+    }
+    console.log(result);
+    res.send(result);
   });
 });
 
@@ -93,4 +117,13 @@ function sendMail(mailOptions, res) {
   });
 }
 
-app.listen(process.env.PORT || 8000, () => { console.log('server running'); })
+app.listen(process.env.PORT || 8000, () => {
+  client.connect(err => {
+    if (err) {
+      throw err;
+    }
+    clientDB = client.db("Profile");;
+  });
+  console.log('server running');
+
+})
