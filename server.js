@@ -42,8 +42,8 @@ app.post('/feedback', (req, res) => {
     console.log("1 document inserted");
     res.send(result.result);
     const mailOptions = {
-      from: mailData.email,
-      to: mailData.email,
+      from: "prawinmeetme@gmail.com",
+      to: req.body.item.email,
       subject: 'Thanks for your feedback!!!',
       generateTextFromHTML: true,
       html: `Hi ${mailData.name}, <br/><br/> 
