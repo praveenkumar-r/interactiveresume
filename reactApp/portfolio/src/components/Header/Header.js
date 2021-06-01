@@ -51,16 +51,16 @@ const Header = props => {
                   Work
                 </a>
                 <a
-                  className={props.activeSection === "contact" ? "active" : ""}
-                  href="#contact"
-                >
-                  Contact
-                </a>
-                <a
                   className={props.activeSection === "testimonials" ? "active" : ""}
                   href="#testimonials"
                 >
                   Testimonials
+                </a>
+                <a
+                  className={props.activeSection === "contact" ? "active" : ""}
+                  href="#contact"
+                >
+                  Contact
                 </a>
                 <a
                   className={props.activeSection === "feedback" ? "active" : ""}
@@ -124,17 +124,18 @@ const Header = props => {
                 Work
               </a>
               <a
-                className={props.activeSection === "contact" ? "active" : ""}
-                href="#contact"
-              >
-                Contact
-              </a>
-              <a
                 className={props.activeSection === "testimonials" ? "active" : ""}
                 href="#testimonials"
               >
                 Testimonials
               </a>
+              <a
+                className={props.activeSection === "contact" ? "active" : ""}
+                href="#contact"
+              >
+                Contact
+              </a>
+
               <a
                 className={props.activeSection === "feedback" ? "active" : ""}
                 href="#feedback"

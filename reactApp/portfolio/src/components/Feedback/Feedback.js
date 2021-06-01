@@ -193,7 +193,7 @@ const Feedback = () => {
                         {!loading &&
                             <>
                                 <div className="feedbackPanel">
-                                    {formlist.map(form => (
+                                    {formlist.length > 0 && formlist.map(form => (
                                         <div className="feedback">
                                             <div className="owner">{form.name}</div>
                                             <div className="feedbacktext">{form.message}</div>
@@ -264,6 +264,10 @@ const Feedback = () => {
                                             </div>
                                         </div>
                                     ))}
+                                    {formlist.length === 0 &&
+                                        <div className="nofeedback">Waiting for your feedback !!!
+                                    </div>
+                                    }
                                 </div>
                                 {/* <div className="feedbackFooter">
                                     <button class="submit btn ftrbtn">Previous</button>
