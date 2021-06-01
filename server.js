@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 var clientDB = "";
+var collection;
 
 app.get('/timestamp', (req, res) => {
   client.connect(err => {
@@ -33,7 +34,6 @@ app.get('/timestamp', (req, res) => {
 });
 
 app.post('/feedback', (req, res) => {
-  collection = clientDB.collection("feedback");
   console.log('myobj', req.body.item);
   collection.insertOne(req.body.item, (err, result) => {
     if (err)
@@ -44,7 +44,6 @@ app.post('/feedback', (req, res) => {
 });
 
 app.get('/feedback', (req, res) => {
-  collection = clientDB.collection("feedback");
   collection.find({}).toArray((error, result) => {
     if (error) {
       console.log(error);
@@ -53,6 +52,15 @@ app.get('/feedback', (req, res) => {
     res.send(result);
   });
 });
+
+app.put('/feedback/:id', (req, res) => {
+  collection.findOneAndUpdate({ _id: req.params.id }, req.body.item).then(function (student) {
+    collection.findOne({ _id: req.params.id }).then(function (result) {
+      res.send(result);
+    });
+  });
+});
+
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com", //replace with your email provider
@@ -122,7 +130,8 @@ app.listen(process.env.PORT || 8000, () => {
     if (err) {
       throw err;
     }
-    clientDB = client.db("Profile");;
+    clientDB = client.db("Profile");
+    collection = clientDB.collection("feedback");
   });
   console.log('server running');
 
