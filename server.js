@@ -58,7 +58,9 @@ app.put('/feedback/:id', (req, res) => {
   console.log('req.body._id', req.body.item._id);
   // Return the updated document instead of the original document
   const options = { returnNewDocument: true };
-  collection.findOneAndUpdate({ _id: req.body.item._id }, { "$set": req.body.item }).then((updatedDocument) => {
+  const setData = { ...req.body.item };
+  delete setData._id;
+  collection.findOneAndUpdate({ _id: req.body.item._id }, { "$set": setData }).then((updatedDocument) => {
     res.send(updatedDocument);
   });
 });
