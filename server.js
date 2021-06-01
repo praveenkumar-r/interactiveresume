@@ -44,6 +44,8 @@ app.post('/feedback', (req, res) => {
   });
 });
 
+
+
 app.get('/feedback', (req, res) => {
   collection.find({}).toArray((error, result) => {
     if (error) {
@@ -87,6 +89,11 @@ transporter.verify(function (error, success) {
 app.post("/send", (req, res) => {
   console.log('req mail', req.body);
   console.log('req params', req.params);
+  messagecollection = clientDB.collection("message");
+  messagecollection.insertOne(req.body.item, (err, result) => {
+    if (err)
+      return err;
+  });
   const mailData = req.body.item;
   // console.log('request', req);
   //2. You can configure the object however you want
