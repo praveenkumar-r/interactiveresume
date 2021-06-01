@@ -1,5 +1,6 @@
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
+var ObjectId = require('mongodb').ObjectID;
 const cors = require('cors');
 const uri = "mongodb+srv://rajenpk:Mapr4567@prawin-1pj0p.mongodb.net/test?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true })
@@ -55,12 +56,11 @@ app.get('/feedback', (req, res) => {
 
 app.put('/feedback/:id', (req, res) => {
   console.log('req.body', req.body.item);
-  console.log('req.body._id', req.body.item._id);
-  // Return the updated document instead of the original document
+  console.log(req.params.id);
   const options = { returnNewDocument: true };
   const setData = { ...req.body.item };
   delete setData._id;
-  collection.findOneAndUpdate({ _id: req.body.item._id }, { "$set": setData }).then((updatedDocument) => {
+  collection.update({ _id: ObjectId(req.params.id) }, { "$set": setData }, { multi: true }).then((updatedDocument) => {
     res.send(updatedDocument);
   });
 });
