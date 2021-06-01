@@ -76,6 +76,7 @@ const Feedback = () => {
             ++inp.unlike;
 
         console.log(inp);
+        setloading(true);
         updateFeedback(inp).then(clearState);
     }
 
@@ -257,7 +258,7 @@ const Feedback = () => {
                                                     </div>
                                                     <div className="iconholder">
                                                         <i className="icon-dislike" onClick={() => updateFeedbacklist(form, 'unlike')}></i>
-                                                        {form.unlike ? form.like : 0}
+                                                        {form.unlike ? form.unlike : 0}
                                                     </div>
                                                 </div>
                                             </div>

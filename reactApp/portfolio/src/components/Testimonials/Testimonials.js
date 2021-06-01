@@ -92,7 +92,7 @@ const Testimonials = () => {
                             <div class="recommendations__item">
                                 <div class="recommendations__text-wrapper">
                                     <div class="testimonial_icon">“</div>
-                                    <div class="recommendation-text">
+                                    <div class="recommendation-text" style={{ "fontSize": "14px" }}>
                                         I have worked closely with Praveen on two UI projects in Caterpillar which mainly helped in managing/monitoring the Telematics data and Subscriptions. Few words that aptly describe Praveen are very confident, team player and problem solver. He is very knowledgeable with UI technologies like Angular, jQuery, HTML, CSS and much more. Apart from his exceptional technical skills, I would highly recommend him for the enthusiasm and positive energy he brings to work everyday.                                    </div>
                                 </div>
                                 <div class="recommendations__header">

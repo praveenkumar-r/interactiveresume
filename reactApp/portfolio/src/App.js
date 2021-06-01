@@ -198,14 +198,6 @@ function App() {
           <Work activeSection={activeSection} />
         </section>
         <section
-          id="contact"
-          ref={(ref) => {
-            ref != null && itemsRef.current.push(ref);
-          }}
-        >
-          <Contact activeSection={activeSection} theme={theme} />
-        </section>
-        <section
           id="testimonials"
           ref={(ref) => {
             ref != null && itemsRef.current.push(ref);
@@ -213,6 +205,15 @@ function App() {
         >
           <Testimonials activeSection={activeSection} theme={theme} />
         </section>
+        <section
+          id="contact"
+          ref={(ref) => {
+            ref != null && itemsRef.current.push(ref);
+          }}
+        >
+          <Contact activeSection={activeSection} theme={theme} />
+        </section>
+
         <section
           id="feedback"
           ref={(ref) => {

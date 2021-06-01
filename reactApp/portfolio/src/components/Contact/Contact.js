@@ -18,7 +18,13 @@ const Contact = (props) => {
 
   const clearState = () => {
     setformState({ ...initialState });
+    setformsubmitstate(false);
   };
+
+  const [
+    formsubmitstate,
+    setformsubmitstate
+  ] = useState(false);
 
   const handleInputChange = e => {
     const { name, value } = e.target;
@@ -30,6 +36,7 @@ const Contact = (props) => {
     console.log(formstate);
     clearState();
     // console.log()
+    setformsubmitstate(true);
     sendMessage(formstate).then(clearState);
   };
 
@@ -69,6 +76,9 @@ const Contact = (props) => {
             </div>
 
             <h2>Contact Form</h2>
+            <div className={formsubmitstate === true ? "thanks" : "none"}>
+              <div className="message">Thanks for the message !!!</div>
+            </div>
             <form id="contactForm" onSubmit={handleSubmit}>
               <div className="form-container">
                 <div className="form-group-split">

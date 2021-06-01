@@ -1,5 +1,5 @@
 #testimonials {
-    background: var(--oddbackgroundImg);
+    background: var(--evenbackgroundImg);
     background-attachment: fixed;
     padding: 60px 0;
     padding-bottom: 0;
@@ -116,7 +116,7 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background: black;
+            background: var(--headercolor);
             opacity: 0.5;
             margin: 5px;
           }
