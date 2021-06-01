@@ -38,14 +38,15 @@ app.post('/feedback', (req, res) => {
   console.log('myobj', req.body.item);
   collection.insertOne(req.body.item, (err, result) => {
     if (err)
-      return response.status(500).send(err);
+      return res.status(500).send(err);
     console.log("1 document inserted");
+    res.send(result.result);
     const mailOptions = {
       from: "prawinmeetme@gmail.com",
       to: req.body.item.email,
       subject: 'Thanks for your feedback!!!',
       generateTextFromHTML: true,
-      html: `Hi ${mailData.name}, <br/><br/> 
+      html: `Hi ${req.body.item.name}, <br/><br/> 
             Thank you for your valuable feedback !!!<br/><br/>
             Looking forward to talking to you soon!<br/><br/>
             Thanks,<br/>
@@ -56,7 +57,6 @@ app.post('/feedback', (req, res) => {
 
     };
     sendMail(mailOptions);
-    res.send(result.result);
   });
 });
 
