@@ -85,7 +85,7 @@ const Contact = (props) => {
                   <input
                     className="form-control"
                     type="text"
-                    placeholder="Name"
+                    placeholder="Your Name"
                     onChange={handleInputChange}
                     name="name"
                     value={formstate.name}
@@ -97,7 +97,7 @@ const Contact = (props) => {
                     className="form-control"
                     type="text"
                     onChange={handleInputChange} value={formstate.email} required
-                    placeholder="Email"
+                    placeholder="Your Email"
                     name="email"
                     style={{ float: "right" }}
                   ></input>

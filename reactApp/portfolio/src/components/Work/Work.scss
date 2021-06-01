@@ -192,7 +192,7 @@
             position: absolute;
             border-radius: 15px;
             top: 0;
-            left: 0;
+            left: 0;            
             color: black;
             .panelHeader{
               font-weight: bold;
@@ -231,11 +231,17 @@
       .card-holder:hover .card-content {
         transform: rotateY(180deg);
       }
-      .card-holder:hover + .toggle {
+      
+      .card-holder:hover ~ .back {
         opacity: 1;
       }
+      .moreinfo{
+        margin-top: -30px;
+        float: right;
+        margin-right: 10px;
+      }
       .footer {
-        color: #999999;
+        color: #000;
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -246,14 +252,17 @@
         line-height: 30px;
         i {
           margin-right: 5px;
-          color: #666666;
+          color: #000;
         }
       }
       .toggle {
         right: 0;
         opacity: 0;
-        transition: all 0.5s;
+        -webkit-transition: all .5s;
+        transition: all .5s;
         bottom: -8px;
+        left: 0;
+        margin: auto;
       }
     }
   }

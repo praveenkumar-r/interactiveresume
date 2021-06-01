@@ -114,7 +114,7 @@ function App() {
             <input type="checkbox" onChange={ToggleTheme} id="togg"></input>
             <span className="toggle-switch round"></span>
           </label>
-          <span className="resolution-label paneLabel">
+          <span className="resolution-label paneLabel resolutionchange">
             Try Different Resolution :
           </span>
           <div className="responsive">
@@ -223,6 +223,9 @@ function App() {
         >
           <Feedback activeSection={activeSection} theme={theme} />
         </section>
+        <div className="appfooter">
+          <small>© Copyright 2021, Praveen Kumar resume</small>
+        </div>
       </div>
     </>
   );

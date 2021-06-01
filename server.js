@@ -115,7 +115,16 @@ app.post("/send", (req, res) => {
       to: mailData.email,
       subject: 'Thanks for your Email!!!',
       generateTextFromHTML: true,
-      html: `Hi ${mailData.name}, <br/> Thanks for your Email.I can check and comeback`
+      html: `Hi ${mailData.name}, <br/><br/> 
+            Thank you for your interest in my profile. I will review your message and get back to you shortly.<br/> <br/>
+            Should you need any further information, please do not hesitate to contact me directly at +91 9791052738<br/><br/>
+            Looking forward to talking to you soon!<br/><br/>
+            Thanks,<br/>
+            Praveen Kumar R<br/>
+            +91-9791052738<br/>
+            https://praveenkumar-resume.netlify.app/
+      `
+
     };
     replyEmail.splice(0, 1);
     sendMail(mailOptions);

@@ -71,7 +71,7 @@ const Resume = (props) => {
             <li className={`${animateClass("fadeInLeft")}`}>
               <div className="content-text">
                 <h3 className="line-title">
-                  Senior Software Developer - Caterpillar USA <span role="img" style={{ 'float': 'right', 'margin-top': '-10px' }} aria-label="flight">✈️</span>
+                  Senior Software Developer - Caterpillar USA <span role="img" style={{ 'float': 'right', 'marginTop': '-10px' }} aria-label="flight">✈️</span>
                 </h3>
                 <span>May 2014 - Nov 2015</span>
                 <p className="line-text">

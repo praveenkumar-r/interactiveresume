@@ -33,22 +33,22 @@ const Services = props => {
                   data-inline="false"
                 ></span>
               </div>
-              <div class="card-content">
+              <div className="card-content">
                 <h3>Angular</h3>
-                <div class="content">
-                  <span class="header">AngularJS Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">3 Years</span>
+                <div className="content">
+                  <span className="header">AngularJS Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">3 Years</span>
                 </div>
-                <div class="content">
-                  <span class="header">Angular Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">5 Years</span>
+                <div className="content">
+                  <span className="header">Angular Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">5 Years</span>
                 </div>
-                <div class="content">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">7</span>
+                <div className="content">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">7</span>
                 </div>
               </div>
             </div>
@@ -64,15 +64,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>REACT</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">1.5 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">1.5 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2</span>
                 </div>
               </div>
             </div>
@@ -88,15 +88,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>Node</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2</span>
                 </div>
               </div>
             </div>
@@ -108,15 +108,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>HTML5</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10</span>
                 </div>
               </div>
             </div>
@@ -127,15 +127,15 @@ const Services = props => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 538.584 538.583"><path d="M0 0h538.584v538.583H0V0z" fill="none" /><path d="M405.5 467.454L269.29 504.13l-136.212-36.676-31.432-340.525h335.29L405.5 467.454z" fill="#2062af" /><path d="M269.289 154.511v320.367l.308.084 110.229-29.682 25.443-290.769h-135.98z" fill="#3c9cd7" /><path d="M191.985 76.899V56.631h29.571V34.453h-51.749v62.684h51.749V76.899h-29.571zm82.766-20.268h20.674V34.453h-51.754v22.178c6.924 6.924 10.535 10.238 20.549 20.252-5.854 0-20.549.021-20.549.02v20.234h51.754V76.899l-20.674-20.268zm73.352 0h20.673V34.453H317.02v22.178c6.924 6.924 10.537 10.238 20.551 20.252-5.852 0-20.551.021-20.551.02v20.234h51.757V76.899l-20.674-20.268z" /><path d="M269.168 239.656l-97.49 40.602 3.233 40.199 94.257-40.301 100.265-42.868 4.157-41.122-104.422 43.49z" fill="#fff" /><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-825.508" y1="1338.301" x2="-825.508" y2="1419.102" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset=".387" stopColor="#d1d3d4" stopOpacity="0" /><stop offset="1" stopColor="#d1d3d4" /></linearGradient><path d="M171.677 280.258l3.233 40.199 94.257-40.301v-40.5l-97.49 40.602z" fill="url(#a)" /><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-724.552" y1="1378.602" x2="-724.552" y2="1462.591" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset=".387" stopColor="#d1d3d4" stopOpacity="0" /><stop offset="1" stopColor="#d1d3d4" /></linearGradient><path d="M373.59 196.167l-104.422 43.489v40.5l100.265-42.868 4.157-41.121z" fill="url(#b)" /><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="-874.103" y1="1302.263" x2="-680.039" y2="1302.263" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset="0" stopColor="#e8e7e5" /><stop offset="1" stopColor="#fff" /></linearGradient><path d="M171.827 280.258l3.234 40.199 144.625.461-3.235 53.598-47.59 13.398-45.748-11.551-2.772-33.268h-42.508l5.545 64.225 85.945 25.412 85.479-24.951 11.09-127.523H171.827z" fill="url(#c)" /><path d="M269.168 280.258h-97.49l3.233 40.199 94.257.301v-40.5zm0 107.528l-.462.129-45.742-11.551-2.772-33.268h-42.507l5.544 64.225 85.939 25.412v-44.947z" opacity=".05" /><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="-883.032" y1="1442.031" x2="-672.341" y2="1442.031" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset="0" stopColor="#e8e7e5" /><stop offset="1" stopColor="#fff" /></linearGradient><path d="M162.898 196.167H373.59l-4.157 41.122H167.98l-5.082-41.122z" fill="url(#d)" /><path d="M269.168 196.167h-106.27l5.082 41.122h101.188v-41.122z" opacity=".05" /></svg>              </div>
               <div className="card-content two-step">
                 <h3>CSS3</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10</span>
                 </div>
               </div>
             </div>
@@ -147,15 +147,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>JAVASCRIPT</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10</span>
                 </div>
               </div>
             </div>
@@ -167,15 +167,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>JQUERY</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">5 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">5 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2</span>
                 </div>
               </div>
             </div>
@@ -187,15 +187,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>TYPESCRIPT</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">7 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">7 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">7</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">7</span>
                 </div>
               </div>
             </div>
@@ -203,19 +203,19 @@ const Services = props => {
           <div className={`${animateClass("fadeInTop", 9)}`}>
             <div className="card">
               <div className="card-icon">
-                <img class="rxjslogo" alt="" src="../../assets/images/rxjs.png"></img>
+                <img className="rxjslogo" alt="" src="../../assets/images/rxjs.png"></img>
               </div>
               <div className="card-content two-step">
                 <h3>RXJS</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">4 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">4 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">5</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">5</span>
                 </div>
               </div>
             </div>
@@ -227,15 +227,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>BootStrap</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">6 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">6 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">4</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">4</span>
                 </div>
               </div>
             </div>
@@ -249,22 +249,22 @@ const Services = props => {
                   data-inline="false"
                 ></span>
               </div>
-              <div class="card-content">
+              <div className="card-content">
                 <h3>Angular</h3>
-                <div class="content">
-                  <span class="header">AngularJS Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">3 Years</span>
+                <div className="content">
+                  <span className="header">AngularJS Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">3 Years</span>
                 </div>
-                <div class="content">
-                  <span class="header">Angular Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">5 Years</span>
+                <div className="content">
+                  <span className="header">Angular Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">5 Years</span>
                 </div>
-                <div class="content">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">7</span>
+                <div className="content">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">7</span>
                 </div>
               </div>
             </div>
@@ -280,15 +280,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>REACT</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">1.5 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">1.5 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2</span>
                 </div>
               </div>
             </div>
@@ -304,15 +304,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>Node</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2</span>
                 </div>
               </div>
             </div>
@@ -324,15 +324,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>HTML5</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10</span>
                 </div>
               </div>
             </div>
@@ -343,15 +343,15 @@ const Services = props => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 538.584 538.583"><path d="M0 0h538.584v538.583H0V0z" fill="none" /><path d="M405.5 467.454L269.29 504.13l-136.212-36.676-31.432-340.525h335.29L405.5 467.454z" fill="#2062af" /><path d="M269.289 154.511v320.367l.308.084 110.229-29.682 25.443-290.769h-135.98z" fill="#3c9cd7" /><path d="M191.985 76.899V56.631h29.571V34.453h-51.749v62.684h51.749V76.899h-29.571zm82.766-20.268h20.674V34.453h-51.754v22.178c6.924 6.924 10.535 10.238 20.549 20.252-5.854 0-20.549.021-20.549.02v20.234h51.754V76.899l-20.674-20.268zm73.352 0h20.673V34.453H317.02v22.178c6.924 6.924 10.537 10.238 20.551 20.252-5.852 0-20.551.021-20.551.02v20.234h51.757V76.899l-20.674-20.268z" /><path d="M269.168 239.656l-97.49 40.602 3.233 40.199 94.257-40.301 100.265-42.868 4.157-41.122-104.422 43.49z" fill="#fff" /><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-825.508" y1="1338.301" x2="-825.508" y2="1419.102" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset=".387" stopColor="#d1d3d4" stopOpacity="0" /><stop offset="1" stopColor="#d1d3d4" /></linearGradient><path d="M171.677 280.258l3.233 40.199 94.257-40.301v-40.5l-97.49 40.602z" fill="url(#a)" /><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-724.552" y1="1378.602" x2="-724.552" y2="1462.591" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset=".387" stopColor="#d1d3d4" stopOpacity="0" /><stop offset="1" stopColor="#d1d3d4" /></linearGradient><path d="M373.59 196.167l-104.422 43.489v40.5l100.265-42.868 4.157-41.121z" fill="url(#b)" /><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="-874.103" y1="1302.263" x2="-680.039" y2="1302.263" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset="0" stopColor="#e8e7e5" /><stop offset="1" stopColor="#fff" /></linearGradient><path d="M171.827 280.258l3.234 40.199 144.625.461-3.235 53.598-47.59 13.398-45.748-11.551-2.772-33.268h-42.508l5.545 64.225 85.945 25.412 85.479-24.951 11.09-127.523H171.827z" fill="url(#c)" /><path d="M269.168 280.258h-97.49l3.233 40.199 94.257.301v-40.5zm0 107.528l-.462.129-45.742-11.551-2.772-33.268h-42.507l5.544 64.225 85.939 25.412v-44.947z" opacity=".05" /><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="-883.032" y1="1442.031" x2="-672.341" y2="1442.031" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset="0" stopColor="#e8e7e5" /><stop offset="1" stopColor="#fff" /></linearGradient><path d="M162.898 196.167H373.59l-4.157 41.122H167.98l-5.082-41.122z" fill="url(#d)" /><path d="M269.168 196.167h-106.27l5.082 41.122h101.188v-41.122z" opacity=".05" /></svg>              </div>
               <div className="card-content two-step">
                 <h3>CSS3</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10</span>
                 </div>
               </div>
             </div>
@@ -363,15 +363,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>JAVASCRIPT</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">10</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">10</span>
                 </div>
               </div>
             </div>
@@ -383,15 +383,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>JQUERY</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">2</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">2</span>
                 </div>
               </div>
             </div>
@@ -403,15 +403,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>TYPESCRIPT</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">7 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">7 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">7</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">7</span>
                 </div>
               </div>
             </div>
@@ -419,19 +419,19 @@ const Services = props => {
           <div className={`${animateClass("fadeInTop", 9)}`}>
             <div className="card">
               <div className="card-icon">
-                <svg viewBox="12.100000000000001 8.4 262.79999999999995 272.2" xmlns="http://www.w3.org/2000/svg" width="100" height="80"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="53.496" x2="177.932" y1="247.701" y2="115.323"><stop offset="0" stop-color="#e01d84" /><stop offset=".401" stop-color="#df1d85" /><stop offset=".77" stop-color="#932c87" /><stop offset="1" stop-color="#5d2f88" /></linearGradient><radialGradient id="b" cx="190.456" cy="80.2" gradientTransform="matrix(1 .00239 -.002 .8362 .16 12.685)" gradientUnits="userSpaceOnUse" r="121.582"><stop offset="0" stop-color="#e01d84" /><stop offset=".139" stop-color="#de1e85" /><stop offset=".285" stop-color="#d62085" /><stop offset=".434" stop-color="#c92386" /><stop offset=".586" stop-color="#b72786" /><stop offset=".739" stop-color="#9d2b87" /><stop offset=".891" stop-color="#7c2e88" /><stop offset="1" stop-color="#5d2f88" /></radialGradient><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="83.212" x2="137.371" y1="62.336" y2="62.336"><stop offset="0" stop-color="#e01d84" /><stop offset=".238" stop-color="#da1e85" /><stop offset=".658" stop-color="#c72085" /><stop offset=".999" stop-color="#b52284" /></linearGradient><path d="M29.6 175.3c-5.2-16.2-6.7-33.3-3.7-50.9 1.3-7.3 3.3-14.3 5.5-21.4 0 0 13.8-45.3 60.5-66 0 0 16.1-8.5 40.3-9.1 0 0-3.3-3.2-5.4-4.6-11.4-7.6-28.4-10.1-38.7.6-3.1 3.2-5.7 6.7-8.6 9.9-3.3 3.6-7.3 6.6-11.9 8.3-4 1.5-8 1.2-12.1 1.9-4.2.7-8.5 2.2-11.9 4.9-3.7 3-5.2 7-5.6 11.6-.4 3.6-.3 7.3-.5 10.9C37 82 33.6 85 26 90.9c-3.2 2.4-5.9 5.6-7.9 9-6 10.6 3.6 21.6 4.1 32.3.1 2.2-.1 4.4-.9 6.5-.8 2.3-2.4 3.8-3.7 5.7-1.8 2.5-3 5.5-2.5 8.6s2.1 6 3.6 8.7c2.9 4.8 6.5 9.1 10.3 13.2.2 0 .4.2.6.4" fill="#e32286" /><path d="M220.4 213.7c23-10 32.8-27.3 32.8-27.3 21.5-29.3 14.2-60.2 14.2-60.2-13.7 29.8-26.2 38-26.2 38 33.7-51.3.2-82.3.2-82.3 13.7 29.2-4.5 64.8-4.5 64.8-15.3 32.2-37 43.7-37 43.7 24.2 4.5 42-11.8 42-11.8-34.7 37.5-72.3 35.7-72.3 35.7 15.8 17.7 39.5 16.2 39.5 16.2-31 7.3-60.1-3-84-22.9-4.5-3.7-8.8-7.7-12.8-12 0 0-3.6-3.8-4.3-4.8l-.1-.1c-.5 18.5 18.8 35.7 18.8 35.7-24.2-10-35.3-31.7-35.3-31.7s-16.3-27.8-4.5-59.5 47.5-38.5 47.5-38.5c29.5 14.3 54.5 18.8 54.5 18.8 52.7 8.8 49.7-17 49.7-17 .5-22.2-33-45.8-33-45.8C145.9 8.4 91.9 37 91.9 37c-46.7 20.7-60.5 66-60.5 66-2.2 7.1-4.2 14.1-5.5 21.4-5.1 29.7 2.6 57.8 19.3 82.8 26 38.8 68.2 52.2 68.2 52.2 62.5 21.2 105.2-10 105.2-10 39.3-27 47.2-58.2 47.2-58.2-31.7 24.8-45.4 22.5-45.4 22.5zM171.6 67.8c3 0 5.4 2.4 5.4 5.4s-2.4 5.4-5.4 5.4-5.4-2.4-5.4-5.4 2.4-5.4 5.4-5.4z" fill="url(#a)" /><path d="M238.5 98.4c.5-22.2-33-45.8-33-45.8C145.8 8.4 91.8 37 91.8 37c-46.7 20.7-60.5 66-60.5 66-2.7 7.7-5.1 19.5-5.1 19.5-2.9 14.8-1.6 28.5-1.6 28.5 1.2 13.1 4.1 21.9 4.1 21.9 3 9.4 4.4 12.3 4.4 12.3-.1-.3-.6-2.5-.6-2.5s-4.2-20.2-.3-39.6c0 0 3.4-20.2 17.2-35.8 0 0 22.4-31.9 64.1-19.4 0 0 9 3.2 12.1 4.8 3.1 1.5 8.5 3.8 8.5 3.8 29.5 14.3 54.5 18.8 54.5 18.8 52.9 8.9 49.9-16.9 49.9-16.9zm-66.9-19.7c-3 0-5.4-2.4-5.4-5.4s2.4-5.4 5.4-5.4 5.4 2.4 5.4 5.4-2.4 5.4-5.4 5.4z" fill="url(#b)" /><path d="M137.4 58.2l-34.1-10.6c-.2 0-1.2-.5-3 0 0 0-20.1 5.1-16.6 16.1 0 0 2.1 6.9 7.8 13.6l37.5-1.8z" fill="url(#c)" /></svg>
+                <svg viewBox="12.100000000000001 8.4 262.79999999999995 272.2" xmlns="http://www.w3.org/2000/svg" width="100" height="80"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="53.496" x2="177.932" y1="247.701" y2="115.323"><stop offset="0" stopColor="#e01d84" /><stop offset=".401" stopColor="#df1d85" /><stop offset=".77" stopColor="#932c87" /><stop offset="1" stopColor="#5d2f88" /></linearGradient><radialGradient id="b" cx="190.456" cy="80.2" gradientTransform="matrix(1 .00239 -.002 .8362 .16 12.685)" gradientUnits="userSpaceOnUse" r="121.582"><stop offset="0" stopColor="#e01d84" /><stop offset=".139" stopColor="#de1e85" /><stop offset=".285" stopColor="#d62085" /><stop offset=".434" stopColor="#c92386" /><stop offset=".586" stopColor="#b72786" /><stop offset=".739" stopColor="#9d2b87" /><stop offset=".891" stopColor="#7c2e88" /><stop offset="1" stopColor="#5d2f88" /></radialGradient><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="83.212" x2="137.371" y1="62.336" y2="62.336"><stop offset="0" stopColor="#e01d84" /><stop offset=".238" stopColor="#da1e85" /><stop offset=".658" stopColor="#c72085" /><stop offset=".999" stopColor="#b52284" /></linearGradient><path d="M29.6 175.3c-5.2-16.2-6.7-33.3-3.7-50.9 1.3-7.3 3.3-14.3 5.5-21.4 0 0 13.8-45.3 60.5-66 0 0 16.1-8.5 40.3-9.1 0 0-3.3-3.2-5.4-4.6-11.4-7.6-28.4-10.1-38.7.6-3.1 3.2-5.7 6.7-8.6 9.9-3.3 3.6-7.3 6.6-11.9 8.3-4 1.5-8 1.2-12.1 1.9-4.2.7-8.5 2.2-11.9 4.9-3.7 3-5.2 7-5.6 11.6-.4 3.6-.3 7.3-.5 10.9C37 82 33.6 85 26 90.9c-3.2 2.4-5.9 5.6-7.9 9-6 10.6 3.6 21.6 4.1 32.3.1 2.2-.1 4.4-.9 6.5-.8 2.3-2.4 3.8-3.7 5.7-1.8 2.5-3 5.5-2.5 8.6s2.1 6 3.6 8.7c2.9 4.8 6.5 9.1 10.3 13.2.2 0 .4.2.6.4" fill="#e32286" /><path d="M220.4 213.7c23-10 32.8-27.3 32.8-27.3 21.5-29.3 14.2-60.2 14.2-60.2-13.7 29.8-26.2 38-26.2 38 33.7-51.3.2-82.3.2-82.3 13.7 29.2-4.5 64.8-4.5 64.8-15.3 32.2-37 43.7-37 43.7 24.2 4.5 42-11.8 42-11.8-34.7 37.5-72.3 35.7-72.3 35.7 15.8 17.7 39.5 16.2 39.5 16.2-31 7.3-60.1-3-84-22.9-4.5-3.7-8.8-7.7-12.8-12 0 0-3.6-3.8-4.3-4.8l-.1-.1c-.5 18.5 18.8 35.7 18.8 35.7-24.2-10-35.3-31.7-35.3-31.7s-16.3-27.8-4.5-59.5 47.5-38.5 47.5-38.5c29.5 14.3 54.5 18.8 54.5 18.8 52.7 8.8 49.7-17 49.7-17 .5-22.2-33-45.8-33-45.8C145.9 8.4 91.9 37 91.9 37c-46.7 20.7-60.5 66-60.5 66-2.2 7.1-4.2 14.1-5.5 21.4-5.1 29.7 2.6 57.8 19.3 82.8 26 38.8 68.2 52.2 68.2 52.2 62.5 21.2 105.2-10 105.2-10 39.3-27 47.2-58.2 47.2-58.2-31.7 24.8-45.4 22.5-45.4 22.5zM171.6 67.8c3 0 5.4 2.4 5.4 5.4s-2.4 5.4-5.4 5.4-5.4-2.4-5.4-5.4 2.4-5.4 5.4-5.4z" fill="url(#a)" /><path d="M238.5 98.4c.5-22.2-33-45.8-33-45.8C145.8 8.4 91.8 37 91.8 37c-46.7 20.7-60.5 66-60.5 66-2.7 7.7-5.1 19.5-5.1 19.5-2.9 14.8-1.6 28.5-1.6 28.5 1.2 13.1 4.1 21.9 4.1 21.9 3 9.4 4.4 12.3 4.4 12.3-.1-.3-.6-2.5-.6-2.5s-4.2-20.2-.3-39.6c0 0 3.4-20.2 17.2-35.8 0 0 22.4-31.9 64.1-19.4 0 0 9 3.2 12.1 4.8 3.1 1.5 8.5 3.8 8.5 3.8 29.5 14.3 54.5 18.8 54.5 18.8 52.9 8.9 49.9-16.9 49.9-16.9zm-66.9-19.7c-3 0-5.4-2.4-5.4-5.4s2.4-5.4 5.4-5.4 5.4 2.4 5.4 5.4-2.4 5.4-5.4 5.4z" fill="url(#b)" /><path d="M137.4 58.2l-34.1-10.6c-.2 0-1.2-.5-3 0 0 0-20.1 5.1-16.6 16.1 0 0 2.1 6.9 7.8 13.6l37.5-1.8z" fill="url(#c)" /></svg>
               </div>
               <div className="card-content two-step">
                 <h3>RXJS</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">4 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">4 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">5</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">5</span>
                 </div>
               </div>
             </div>
@@ -443,15 +443,15 @@ const Services = props => {
               </div>
               <div className="card-content two-step">
                 <h3>BootStrap</h3>
-                <div class="content first">
-                  <span class="header">Experience</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">6 Years</span>
+                <div className="content first">
+                  <span className="header">Experience</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">6 Years</span>
                 </div>
-                <div class="content second">
-                  <span class="header">Projects Completed</span>
-                  <span class="delimiter">: </span>
-                  <span class="value">4</span>
+                <div className="content second">
+                  <span className="header">Projects Completed</span>
+                  <span className="delimiter">: </span>
+                  <span className="value">4</span>
                 </div>
               </div>
             </div>

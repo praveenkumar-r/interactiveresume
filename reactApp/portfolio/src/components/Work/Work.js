@@ -29,7 +29,7 @@ const Work = () => {
                       <div className="panelvalue">HTML5, CSS3 , jQuery, JavaScript</div>
                     </div>
                   </div>
-                  <div className="footer">
+                  <div className="moreinfo">
                     <i className="icon-action-redo"></i>More Info
               </div>
                 </div>
@@ -50,7 +50,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            <div className="footer toggle" style={{ "color": "#fff" }}>
+            <div className="footer toggle back" style={{ "color": "#fff" }}>
               <i className="icon-action-undo" style={{ "color": "#fff" }}></i>
               Back
           </div>
@@ -79,7 +79,7 @@ const Work = () => {
                       <div className="panelvalue">HTML5, CSS3, jQuery, Backbone, Handlebar</div>
                     </div>
                   </div>
-                  <div className="footer">
+                  <div className="moreinfo">
                     <i className="icon-action-redo"></i>More Info
               </div>
                 </div>
@@ -93,7 +93,6 @@ const Work = () => {
                       <div className="panelHeader">Roles &amp; Responsisbilities</div>
                       <div className="panelDescription">
                         <span>• Designed and developed this application in MVC Backbone framework..</span>
-                        <span>• Maintaining the application responsive for several resolutions.</span>
                         <span>• Integrated Bing map showing truck location and path of travel.</span>
                         <span>• Migrated the entire product from Backbone to Angular JS.</span>
                       </div>
@@ -102,7 +101,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            <div className="footer toggle">
+            <div className="footer toggle back">
               <i className="icon-action-undo"></i>
               Back
             </div>
@@ -131,7 +130,7 @@ const Work = () => {
                       <div className="panelvalue">Node, HTML5, CSS3, Angular, Javascript</div>
                     </div>
                   </div>
-                  <div className="footer">
+                  <div className="moreinfo">
                     <i className="icon-action-redo"></i>More Info
               </div>
                 </div>
@@ -143,7 +142,7 @@ const Work = () => {
                     </div>
                     <div className="panelpadding">
                       <div className="panelHeader">Roles &amp; Responsisbilities</div>
-                      <div class="panelDescription">
+                      <div className="panelDescription">
                         <span>• Designed componentized UI architecture and developed this application in Angular framework running on express Node</span>
                         <span>• Code reviewing and proving technical solutions for other developer queries.</span>
                         <span>• Implemented unit testing using Jasmine and Karma.</span>
@@ -153,7 +152,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            <div className="footer toggle">
+            <div className="footer toggle back">
               <i className="icon-action-undo"></i>
               Back
             </div>
@@ -182,7 +181,7 @@ const Work = () => {
                       <div className="panelvalue">Node ,Angular 5, Redux, NX, HTML5, CSS3, JavaScript</div>
                     </div>
                   </div>
-                  <div className="footer">
+                  <div className="moreinfo">
                     <i className="icon-action-redo"></i>More Info
               </div>
                 </div>
@@ -190,11 +189,11 @@ const Work = () => {
                   <div className="panelpadding">
                     <div className="panelHeader">Description</div>
                     <div className="panelContent" style={{ "lineHeight": "17px" }}>
-                      eRoutes is a process monitoring solution that facilitates the smooth, steady delivery of material from the plant to the paver. eRoutes is a web application that allows paving contractors to track the location and productivity of haul trucks as they travel between plant and jobsite.
+                      eRoutes is a process monitoring solution that facilitates the smooth, steady delivery of material from the plant to the paver. It allows paving contractors to track the location and productivity of haul trucks as they travel between plant and jobsite.
                     </div>
                     <div className="panelpadding">
                       <div className="panelHeader">Roles &amp; Responsisbilities</div>
-                      <div class="panelDescription">
+                      <div className="panelDescription">
                         <span>• Developed Node API for processing Data, used Passport for user authentication running in express node server.</span>
                         <span>• Implemented NGRX store management.</span>
                         <span>• NX framework has been used for development that helps in developing multiple apps in mono repository.</span>
@@ -204,7 +203,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            <div className="footer toggle">
+            <div className="footer toggle back">
               <i className="icon-action-undo"></i>
               Back
             </div>
@@ -233,7 +232,7 @@ const Work = () => {
                       <div className="panelvalue">Angular 10, Java, Azure, HTML5, CSS3, JavaScript</div>
                     </div>
                   </div>
-                  <div className="footer">
+                  <div className="moreinfo">
                     <i className="icon-action-redo"></i>More Info
               </div>
                 </div>
@@ -245,7 +244,7 @@ const Work = () => {
                     </div>
                     <div className="panelpadding">
                       <div className="panelHeader">Roles &amp; Responsisbilities</div>
-                      <div class="panelDescription">
+                      <div className="panelDescription">
                         <span>• Code reviewing and proving technical solutions for other developer queries..</span>
                         <span>• Designed and implemented CI/CD process involving DOCKER and Jenkins.</span>
                         <span>• E2E automation testing using protractor.</span>
@@ -255,7 +254,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
-            <div className="footer toggle">
+            <div className="footer toggle back">
               <i className="icon-action-undo"></i>
               Back
             </div>
@@ -316,7 +315,7 @@ const Work = () => {
                     <div className="panelvalue">HTML5, CSS3 , Angular8, JavaScript</div>
                   </div>
                 </div>
-                <div className="footer">
+                <div className="moreinfo">
                   <i className="icon-action-redo"></i>More Info
               </div>
               </div>
@@ -338,7 +337,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="footer toggle" style={{ "color": "#fff" }}>
+          <div className="footer toggle back" style={{ "color": "#fff" }}>
             <i className="icon-action-undo" style={{ "color": "#fff" }}></i>
               Back
           </div>
@@ -367,7 +366,7 @@ const Work = () => {
                     <div className="panelvalue">HTML5, CSS3 , Angular8, JavaScript</div>
                   </div>
                 </div>
-                <div className="footer">
+                <div className="moreinfo">
                   <i className="icon-action-redo"></i>More Info
               </div>
               </div>
@@ -389,7 +388,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="footer toggle" style={{ "color": "#000" }}>
+          <div className="footer toggle back" style={{ "color": "#000" }}>
             <i className="icon-action-undo"></i>
               Back
             </div>
@@ -418,7 +417,7 @@ const Work = () => {
                     <div className="panelvalue">Node, HTML5, CSS3, Javascript, React</div>
                   </div>
                 </div>
-                <div className="footer">
+                <div className="moreinfo">
                   <i className="icon-action-redo"></i>More Info
               </div>
               </div>
@@ -430,7 +429,7 @@ const Work = () => {
                     </div>
                   <div className="panelpadding">
                     <div className="panelHeader">Roles &amp; Responsisbilities</div>
-                    <div class="panelDescription">
+                    <div className="panelDescription">
                       <span>• Contributed and developed couple of features for this application.</span>
                       <span>• Explored & learned about media based libraries.</span>
                       <span>• Done couple of POC for snippet creation from Tiktok.</span>
@@ -440,8 +439,8 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="footer toggle" style={{ "color": "#fff" }}>
-            <i className="icon-action-undo"></i>
+          <div className="footer toggle back" style={{ "color": "#fff" }}>
+            <i className="icon-action-undo" style={{ "color": "#fff" }}></i>
               Back
             </div>
         </div>
@@ -469,7 +468,7 @@ const Work = () => {
                     <div className="panelvalue">HTML5, CSS3, Angular8, JavaScript</div>
                   </div>
                 </div>
-                <div className="footer">
+                <div className="moreinfo">
                   <i className="icon-action-redo"></i>More Info
               </div>
               </div>
@@ -480,7 +479,7 @@ const Work = () => {
                     OPENSPACE is a destination for all students, companies’ owners, and institutions inside and outside the Kingdom, who seek for knowledge through taking training, professional and language developmental courses, in addition to scientific research, administrative consultations, education programs, languages, and marketing support.                    </div>
                   <div className="panelpadding">
                     <div className="panelHeader">Roles &amp; Responsisbilities</div>
-                    <div class="panelDescription">
+                    <div className="panelDescription">
                       <span>• Responsible for tranlsation to Arabic.</span>
                       <span>• Responsible for layout transition on transaltion from ltr to rtl.</span>
                       <span>• Developed more than couple of features.</span>
@@ -491,7 +490,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="footer toggle" style={{ "color": "#000" }}>
+          <div className="footer toggle back" style={{ "color": "#000" }}>
             <i className="icon-action-undo"></i>
               Back
             </div>

@@ -23,7 +23,7 @@ const About = (props) => {
             }
           >
             <h3>
-              Hi Guys! <span class="wave" role="img" aria-label="hi">👋</span>
+              Hi Guys! <span className="wave" role="img" aria-label="hi">👋</span>
             </h3>
 
             <p>
@@ -34,14 +34,14 @@ const About = (props) => {
               </strong>
               .I enjoy building everything from small business sites to rich
               interactive webapps.
-              <span class="seperator">
+              <span className="seperator">
                 I'm a hands-on technical leader who has built software products
                 from the ground up, run large engineering teams, and provided
                 guidance at the executive and board level. I specialize in
                 building applications specific to the business needs of my
                 clients.
               </span>
-              <span class="mark seperator">
+              <span className="mark seperator">
                 If you are a business seeking a web presence or an employer
                 looking to hire, you can get in touch with me here
               </span>
