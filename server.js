@@ -41,6 +41,22 @@ app.post('/feedback', (req, res) => {
       return response.status(500).send(err);
     console.log("1 document inserted");
     res.send(result.result);
+    const mailOptions = {
+      from: mailData.email,
+      to: mailData.email,
+      subject: 'Thanks for your feedback!!!',
+      generateTextFromHTML: true,
+      html: `Hi ${mailData.name}, <br/><br/> 
+            Thank you for your valuable feedback !!!<br/><br/>
+            Looking forward to talking to you soon!<br/><br/>
+            Thanks,<br/>
+            Praveen Kumar R<br/>
+            +91-9791052738<br/>
+            https://praveenkumar-resume.netlify.app/
+      `
+
+    };
+    sendMail(mailOptions);
   });
 });
 
