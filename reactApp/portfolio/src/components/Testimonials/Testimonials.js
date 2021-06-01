@@ -56,7 +56,7 @@ const Testimonials = () => {
                                             Anubhav Khanna
                                         </div>
                                         <div class="recommendations__headline">
-                                            Co-Founder | Product Head | Site Reliability Lead | Technical Project Manager | Love to work across hierarchies, working on strategy as well as execution.
+                                            Co-Founder | Product Head | Site Reliability Lead | Technical Project Manager.
                                         </div>
                                     </div>
                                     <div class="profile_img">

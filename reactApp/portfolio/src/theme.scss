@@ -18,6 +18,7 @@
   @extend .resumeSection-light;
   @extend .contact-light;
   @extend .work-light;
+  @extend .feedback-light;
 }
 
 #main[data-theme="dark"] {
@@ -37,6 +38,7 @@
   @extend .resumeSection-dark;
   @extend .work-dark;
   @extend .contact-dark;
+  @extend .feedback-dark;
 }
 
 .aboutSection-light {
@@ -86,4 +88,16 @@
   --contackbckgroundColor: #fff;
   --contactBoxShadow: 0 0 30px #ededed;
   --mapBoxShadow: 0 0 30px #ededed;
+}
+
+.feedback-dark{
+  --feedbackbackgroundcolor:#314c50;
+  --feedbackfontcolor:#fff;
+  --headercolor:#fff;
+}
+
+.feedback-light{
+  --feedbackbackgroundcolor:#f2f2f2;
+  --feedbackfontcolor:#666;
+  --headercolor:#000;
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Feedback.scss";
-import { saveFeedback, getFeedback } from "../../services/service";
+import { saveFeedback, getFeedback, updateFeedback } from "../../services/service";
 const initialState = {
     name: "",
     email: "",
@@ -9,7 +9,9 @@ const initialState = {
     htmlcss3_rating: 0,
     javascript_rating: 0,
     angular_rating: 0,
-    react_rating: 0
+    react_rating: 0,
+    like: 0,
+    unlike: 0
 };
 
 const Feedback = () => {
@@ -28,9 +30,15 @@ const Feedback = () => {
         setformlist
     ] = useState([]);
 
+    const [
+        loading,
+        setloading
+    ] = useState(false);
+
     const clearState = () => {
         setformState({ ...initialState });
         setformsubmitstate(false);
+        getFeedbacklist();
     };
 
     const handleInputChange = e => {
@@ -44,26 +52,43 @@ const Feedback = () => {
         e.preventDefault();
         console.log(formstate);
         setformsubmitstate(true);
+        formstate.like = 0;
+        formstate.unlike = 0;
         saveFeedback(formstate).then(clearState);
     };
 
     useEffect(() => {
+        getFeedbacklist();
+    }, []);
+
+    function getFeedbacklist() {
+        setloading(true);
         getFeedback().then((res) => {
             setformlist(res);
+            setloading(false);
         })
-    }, []);
+    }
+
+    const updateFeedbacklist = (inp, type) => {
+        if (type === "like")
+            ++inp.like;
+        else
+            ++inp.unlike;
+
+        console.log(inp);
+        updateFeedback(inp).then(clearState);
+    }
 
     return (
         <>
             <div className="container">
                 <h2 className="section-title">Feedback</h2>
                 <div className="feedbackContainer">
-                    {formsubmitstate}
-                    <div className={formsubmitstate === true ? "thanks" : "none"}>
-                        <div className="message">Thanks for the feedback !!!</div>
-                    </div>
                     <div className="feedbackForm">
                         <p>Please give your feedback</p>
+                        <div className={formsubmitstate === true ? "thanks" : "none"}>
+                            <div className="message">Thanks for the feedback !!!</div>
+                        </div>
                         <form id="contactForm" onSubmit={handleSubmit}>
                             <div className="form-control-panel mt-15">
                                 <input type="text" placeholder="Name" value={formstate.name} name="name" required onChange={handleInputChange} />
@@ -158,83 +183,96 @@ const Feedback = () => {
 
                     </div>
                     <div className="feedbackList">
-                        <div className="feedbackPanel">
-                            {formlist.map(form => (
-                                <div className="feedback">
-                                    <div className="owner">{form.name}</div>
-                                    <div className="feedbacktext">{form.message}</div>
-                                    <div className="rating">
-                                        <div className="portfolio_heaader">
-                                            <div className="header">Portfolio Rating : </div>
+                        {loading &&
+                            <div className="loadingwrapper">
+                                <div className="loading"></div>
+                            </div>
+
+                        }
+                        {!loading &&
+                            <>
+                                <div className="feedbackPanel">
+                                    {formlist.map(form => (
+                                        <div className="feedback">
+                                            <div className="owner">{form.name}</div>
+                                            <div className="feedbacktext">{form.message}</div>
+                                            <div className="rating">
+                                                <div className="portfolio_heaader">
+                                                    <div className="header">Portfolio Rating : </div>
+                                                    <div className="rate">
+                                                        <label for="portfolio_star1" title="text" className={parseInt(form.portfolio_rating) >= 1 ? "rating_active" : ""}></label>
+                                                        <label for="portfolio_star2" title="text" className={parseInt(form.portfolio_rating) >= 2 ? "rating_active" : ""}></label>
+                                                        <label for="portfolio_star3" title="text" className={parseInt(form.portfolio_rating) >= 3 ? "rating_active" : ""}></label>
+                                                        <label for="portfolio_star4" title="text" className={parseInt(form.portfolio_rating) >= 4 ? "rating_active" : ""}></label>
+                                                        <label for="portfolio_star5" title="text" className={parseInt(form.portfolio_rating) >= 5 ? "rating_active" : ""}></label>
+                                                    </div>
+                                                </div>
+                                                <div className="skillrating">
+                                                    <div className="header">Skill Rating : </div>
+                                                    <div className="skillholder">
+                                                        <div class="form-control-panel">HTML5, CSS3
                                             <div className="rate">
-                                                <label for="portfolio_star5" title="text" className={parseInt(form.portfolio_rating) <= 5 ? "" : "active"}></label>
-                                                <label for="portfolio_star4" title="text" ></label>
-                                                <label for="portfolio_star3" title="text" ></label>
-                                                <label for="portfolio_star2" title="text" ></label>
-                                                <label for="portfolio_star1" title="text" ></label>
+                                                                <label for="portfolio_star5" title="text" className={parseInt(form.htmlcss3_rating) >= 1 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star4" title="text" className={parseInt(form.htmlcss3_rating) >= 2 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star3" title="text" className={parseInt(form.htmlcss3_rating) >= 3 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star2" title="text" className={parseInt(form.htmlcss3_rating) >= 4 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star1" title="text" className={parseInt(form.htmlcss3_rating) >= 5 ? "rating_active" : ""}></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-control-panel ml-10">JAVASCRIPT
+                                            <div className="rate">
+                                                                <label for="portfolio_star5" title="text" className={parseInt(form.javascript_rating) >= 1 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star4" title="text" className={parseInt(form.javascript_rating) >= 2 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star3" title="text" className={parseInt(form.javascript_rating) >= 3 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star2" title="text" className={parseInt(form.javascript_rating) >= 4 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star1" title="text" className={parseInt(form.javascript_rating) >= 5 ? "rating_active" : ""}></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="skillholder">
+                                                        <div class="form-control-panel">ANGULAR
+                                            <div className="rate">
+                                                                <label for="portfolio_star5" title="text" className={parseInt(form.angular_rating) >= 1 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star4" title="text" className={parseInt(form.angular_rating) >= 2 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star3" title="text" className={parseInt(form.angular_rating) >= 3 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star2" title="text" className={parseInt(form.angular_rating) >= 4 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star1" title="text" className={parseInt(form.angular_rating) >= 5 ? "rating_active" : ""}></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-control-panel ml-10">REACT
+                                            <div className="rate">
+                                                                <label for="portfolio_star5" title="text" className={parseInt(form.react_rating) >= 1 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star4" title="text" className={parseInt(form.react_rating) >= 2 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star3" title="text" className={parseInt(form.react_rating) >= 3 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star2" title="text" className={parseInt(form.react_rating) >= 4 ? "rating_active" : ""}></label>
+                                                                <label for="portfolio_star1" title="text" className={parseInt(form.react_rating) >= 5 ? "rating_active" : ""}></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="suggestion">
+                                                    <div className="iconholder">
+                                                        <i className="icon-like" onClick={() => updateFeedbacklist(form, 'like')}></i>
+                                                        {form.like ? form.like : 0}
+                                                    </div>
+                                                    <div className="iconholder">
+                                                        <i className="icon-dislike" onClick={() => updateFeedbacklist(form, 'unlike')}></i>
+                                                        {form.unlike ? form.like : 0}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div className="skillrating">
-                                            <div className="header">Skill Rating : </div>
-                                            <div className="skillholder">
-                                                <div class="form-control-panel">HTML5, CSS3
-                                                <div className="rate">
-                                                        <label for="portfolio_star5" title="text" ></label>
-                                                        <label for="portfolio_star4" title="text" ></label>
-                                                        <label for="portfolio_star3" title="text" ></label>
-                                                        <label for="portfolio_star2" title="text" ></label>
-                                                        <label for="portfolio_star1" title="text" ></label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-control-panel ml-10">JAVASCRIPT
-                                                <div className="rate">
-                                                        <label for="portfolio_star5" title="text" ></label>
-                                                        <label for="portfolio_star4" title="text" ></label>
-                                                        <label for="portfolio_star3" title="text" ></label>
-                                                        <label for="portfolio_star2" title="text" ></label>
-                                                        <label for="portfolio_star1" title="text" ></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="skillholder">
-                                                <div class="form-control-panel">ANGULAR
-                                                <div className="rate">
-                                                        <label for="portfolio_star5" title="text" ></label>
-                                                        <label for="portfolio_star4" title="text" ></label>
-                                                        <label for="portfolio_star3" title="text" ></label>
-                                                        <label for="portfolio_star2" title="text" ></label>
-                                                        <label for="portfolio_star1" title="text" ></label>
-                                                    </div>
-                                                </div>
-                                                <div class="form-control-panel ml-10">REACT
-                                                <div className="rate">
-                                                        <label for="portfolio_star5" title="text" ></label>
-                                                        <label for="portfolio_star4" title="text" ></label>
-                                                        <label for="portfolio_star3" title="text" ></label>
-                                                        <label for="portfolio_star2" title="text" ></label>
-                                                        <label for="portfolio_star1" title="text" ></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="suggestion">
-                                            <div className="iconholder">
-                                                <i className="icon-like"></i>
-                                        2
-                                    </div>
-                                            <div className="iconholder">
-                                                <i className="icon-dislike"></i>
-                                        2
-                                    </div>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
-                            ))}
-                        </div>
-                        <div className="feedbackFooter">
-                            <button class="submit btn ftrbtn">Previous</button>
-                            <button class="submit btn ftrbtn">Next</button>
-                        </div>
+                                {/* <div className="feedbackFooter">
+                                    <button class="submit btn ftrbtn">Previous</button>
+                                    <button class="submit btn ftrbtn">Next</button>
+                                </div> */}
+                            </>
+                        }
+
+
+
                     </div>
                 </div>
             </div>

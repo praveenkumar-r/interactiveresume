@@ -132,6 +132,9 @@
   /** For mobile **/
 @media only screen and (max-width: 768px) {
   #recommendation{
+    .slider{
+      left: 25% !important;
+    }
     li{
       width:80% !important;
     }

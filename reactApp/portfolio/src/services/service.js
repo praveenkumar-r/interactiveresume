@@ -29,3 +29,14 @@ export function saveFeedback(item) {
     })
         .then(data => data.json())
 }
+
+export function updateFeedback(item) {
+    return fetch(`https://app1-portfolio.herokuapp.com/feedback/${item._id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ item })
+    })
+        .then(data => data.json())
+}

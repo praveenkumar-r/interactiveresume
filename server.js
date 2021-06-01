@@ -54,6 +54,7 @@ app.get('/feedback', (req, res) => {
 });
 
 app.put('/feedback/:id', (req, res) => {
+  console.log(req.body.item);
   collection.findOneAndUpdate({ _id: req.body.item._id }, req.body.item).then(function (student) {
     collection.findOne({ _id: req.body.item._id }).then(function (result) {
       res.send(result);

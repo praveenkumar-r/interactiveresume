@@ -18,21 +18,24 @@
         display: flex;
         flex-direction: row;
         .thanks{
-          height: 580px;
-          width: 34.5%;
+          height: 40%;
+          width: 90%;
           background: black;
           position: absolute;
           z-index: 100;
           opacity: 0.8;
           transition: all 0.5s linear;
           border-radius: 10px;
+          top: 25%;
+          left: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           .message{
             position: absolute;
             color: #fff;
             z-index: 101;
             font-size: 20px;
-            top: 45%;
-            left: 80px;
           }
         }
         .feedbackForm{
@@ -42,7 +45,8 @@
           box-shadow: var(--contactBoxShadow);
           background: var(--contackbckgroundColor);
           border-radius: 10px;
-          
+          position: relative;
+          color:var(--feedbackfontcolor);
           p{
             margin-top: 10px;
             font-size: 11px;
@@ -124,20 +128,52 @@
           width: 70%;
           box-shadow: var(--contactBoxShadow);
           background: var(--contackbckgroundColor);
+          .loadingwrapper{
+            height: 580px;
+            width: 100%;
+            background: black;
+            z-index: 10;
+            opacity: 0.5;
+            border-radius: 10px;
+            .loading {
+              width:50px;
+              height:40px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+              --c:linear-gradient(90deg, #0000 4px,#fff 0 calc(100% - 4px),#0000 0);
+              background: 
+                var(--c) 0%   50%,
+                var(--c) 50%  50%,
+                var(--c) 100% 50%;
+              background-size:calc(100%/3) 100%;
+              background-repeat: no-repeat;
+              animation:b1 1s infinite linear;
+            }
+            @keyframes b1 {
+                33%{background-size:calc(100%/3) 10% ,calc(100%/3) 100%,calc(100%/3) 100%}
+                50%{background-size:calc(100%/3) 100%,calc(100%/3) 10% ,calc(100%/3) 100%}
+                66%{background-size:calc(100%/3) 100%,calc(100%/3) 100%,calc(100%/3) 10% }
+            }
+          }
           position: relative;
           .feedbackPanel{
             padding: 0 20px;
-            height: 520px;
+            height: 580px;
             overflow-y: auto;
             .feedback{
               position: relative;
-              background: var(--resumeContextbackgroundcolor);
+              background: var(--feedbackbackgroundcolor);
               border-radius: 10px;
               margin-top: 20px;
+              color:var(--feedbackfontcolor);
               .owner{
                 font-weight: bold;
                 font-size: 12px;
-                color: black;
+                color:var(--headercolor);
                 padding-left: 10px;
               }
               .feedbacktext{
@@ -244,7 +280,7 @@
   .feedbackContainer{
     flex-direction: column !important;
     .feedbackForm{
-      width: 98% !important;
+      width: 94% !important;
       margin-right: 0 !important;
       padding: 9px !important;
 
@@ -252,6 +288,10 @@
     .feedbackList{
       width: 100% !important;
       padding:0px !important;
+      margin-top: 10px;
+      .loadingwrapper{
+        height: 100px;
+      }
       .skillrating{
         flex-direction: column !important;
         .skillholder{
@@ -269,9 +309,9 @@
   transition: all 0.5s linear;
 }
 
-// .active{
-//   color:orange;
-// }
+.rating_active{
+  color:orange;
+}
 
 
   
