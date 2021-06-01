@@ -237,6 +237,12 @@ ol {
     align-items: center;
     justify-content: center;
     color: #fff;
+    .github{
+      position: absolute;
+      text-decoration: underline;
+      right: 10%;
+      color: #fff;
+    }
 }
 
 .switch {
@@ -359,5 +365,8 @@ input:checked + .toggle-switch:before {
       top:25% !important;
     }
 
+  }
+  .github{
+    right:5px !important;
   }
 }

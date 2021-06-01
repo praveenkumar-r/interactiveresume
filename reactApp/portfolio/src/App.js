@@ -225,6 +225,7 @@ function App() {
         </section>
         <div className="appfooter">
           <small>© Copyright 2021, Praveen Kumar resume</small>
+          <a href="https://github.com/praveenkumar-r/interactiveresume" className="github">Github</a>
         </div>
       </div>
     </>
