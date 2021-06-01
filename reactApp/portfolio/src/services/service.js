@@ -1,5 +1,5 @@
 export function sendMessage(item) {
-    return fetch('http://localhost:8000/send', {
+    return fetch('https://app1-portfolio.herokuapp.com/send', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
