@@ -40,7 +40,6 @@ app.post('/feedback', (req, res) => {
     if (err)
       return response.status(500).send(err);
     console.log("1 document inserted");
-    res.send(result.result);
     const mailOptions = {
       from: "prawinmeetme@gmail.com",
       to: req.body.item.email,
@@ -57,6 +56,7 @@ app.post('/feedback', (req, res) => {
 
     };
     sendMail(mailOptions);
+    res.send(result.result);
   });
 });
 
