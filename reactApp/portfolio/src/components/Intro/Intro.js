@@ -34,7 +34,7 @@ function Intro() {
                 </a>
               </li>
               <li>
-                <a className="google" target="blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rpk.sharaj@gmail.com">
+                <a className="google" target="blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=prawinmeetme@gmail.com">
                   <i className="icon-social-google"></i>
                 </a>
               </li>
