@@ -54,10 +54,11 @@ app.get('/feedback', (req, res) => {
 });
 
 app.put('/feedback/:id', (req, res) => {
-  console.log(req.body.item);
+  console.log('req.body', req.body.item);
+  console.log('req.body._id', req.body.item._id);
   // Return the updated document instead of the original document
   const options = { returnNewDocument: true };
-  collection.findOneAndUpdate({ _id: req.body.item[0]._id }, { "$set": req.body.item[0] }).then((updatedDocument) => {
+  collection.findOneAndUpdate({ _id: req.body.item._id }, { "$set": req.body.item }).then((updatedDocument) => {
     res.send(updatedDocument);
   });
 });
