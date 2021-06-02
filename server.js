@@ -2,7 +2,7 @@ const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
 const cors = require('cors');
-const uri = "mongodb+srv://rajenpk:Mapr4567@prawin-1pj0p.mongodb.net/test?retryWrites=true&w=majority";
+const uri = process.env.mongo_URL;
 const client = new MongoClient(uri, { useNewUrlParser: true })
 const nodemailer = require("nodemailer");
 const app = express();
