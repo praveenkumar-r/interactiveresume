@@ -89,7 +89,7 @@ const transporter = nodemailer.createTransport({
   port: 587,
   auth: {
     user: 'prawinmeetme@gmail.com',
-    pass: 'rpksharaj*89',
+    pass: process.env.email_pass,
   },
 });
 
