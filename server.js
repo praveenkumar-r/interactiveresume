@@ -149,6 +149,8 @@ app.post("/send", (req, res) => {
 });
 
 function sendMail(mailOptions, res) {
+  console.log('transporter',transporter);
+  console.log('process.env.email_pass',process.env.email_pass);
   transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
       console.log(err);
