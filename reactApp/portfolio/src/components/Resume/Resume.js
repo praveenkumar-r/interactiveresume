@@ -49,6 +49,24 @@ const Resume = (props) => {
               <i className="icon-briefcase"></i>
               <h2 className="timelin-title">Experience</h2>
             </li>
+            <li className={`${animateClass("fadeInLeft")}`}>
+              <div className="content-text">
+                <h3 className="line-title">Senior Member of Technical staff - Broadcom.</h3>
+                <span>Aug 2021 - Jan 2023</span>
+                <p className="line-text">
+                  Working as Senior Member of technical staff in Broadcom chennai, TamilNadu
+                </p>
+              </div>
+            </li>
+            <li className={`${animateClass("fadeInLeft")}`}>
+              <div className="content-text">
+                <h3 className="line-title">Member of Technical staff - Broadcom.</h3>
+                <span>Aug 2021 - Jan 2023</span>
+                <p className="line-text">
+                  Worked as Member of technical staff in Broadcom chennai, TamilNadu
+                </p>
+              </div>
+            </li>
             <li className={`${animateClass("fadeInRight")}`}>
               <div className="content-text">
                 <h3 className="line-title">Senior Engineer - Nielsen.</h3>
