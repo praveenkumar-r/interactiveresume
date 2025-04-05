@@ -292,12 +292,12 @@ const Work = () => {
                   <div className="card-back" style={{ "background": "#CC092F" }}>
                     <div className="panelpadding">
                       <div className="panelHeader">Description</div>
-                      <div className="panelContent" style={{ "lineHeight": "17px" }}>
+                      <div className="panelContent" style={{ "lineHeight": "17px", "color": "#ffff" }}>
                       The VMware Edge Cloud Orchestrator™ provides centralized enterprise-wide installation, configuration and real-time monitoring in addition to orchestrating the data flow through the cloud network.It also provides Centralized monitoring, visibility and cloud control enable zero-touch branch deployment while delivering autom                      <div className="panelpadding">
                         <div className="panelHeader">Roles &amp; Responsisbilities</div>
                         <div className="panelDescription">
-                          <span>• Designed and developed some of the core features in this application in Angular 10.</span>
                           <span>• Migrated this application from canjs to Angular 10.</span>
+                          <span>• Designed and developed core features in Angular 15.</span>
                           <span>• Code reviewing and proving technical solutions for other developer queries.</span>
                         </div>
                       </div>
