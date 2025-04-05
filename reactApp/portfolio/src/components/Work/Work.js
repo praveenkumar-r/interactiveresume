@@ -158,8 +158,8 @@ const Work = () => {
             </div>
           </div>
       </div>
-      <div id="work-block">
-      <div className="work-item">
+        <div id="work-block">
+          <div className="work-item">
             <div className="card-holder">
               <div className="card-content">
                 <div className="card-front">
@@ -262,59 +262,60 @@ const Work = () => {
             </div>
           </div>
           <div className="work-item">
-            <div className="card-holder">
-              <div className="card-content">
-                <div className="card-front">
-                  <div className="header" style={{ "background": "#CC092F" }}></div>
-                  <div className="logo">
-                    <div className="nielsenlogo">
-                      <img alt="" src="assets/images/AVGO.png"></img>
+              <div className="card-holder">
+                <div className="card-content">
+                  <div className="card-front">
+                    <div className="header" style={{ "background": "#CC092F" }}></div>
+                    <div className="logo">
+                      <div className="nielsenlogo">
+                        <img alt="" src="assets/images/AVGO.png"></img>
+                      </div>
                     </div>
-                  </div>
-                  <div className="description">
-                    <div className="panelholder">
-                      <div className="panelkey">Project Title </div>
-                      <div className="panelvalue">VMware Edge Cloud Orchestrator</div>
+                    <div className="description">
+                      <div className="panelholder">
+                        <div className="panelkey">Project Title </div>
+                        <div className="panelvalue">VMware Edge Cloud Orchestrator</div>
+                      </div>
+                      <div className="panelholder adjustpadding">
+                        <div className="panelkey">Team Size </div>
+                        <div className="panelvalue">15</div>
+                      </div>
+                      <div className="panelholder adjustpadding">
+                        <div className="panelkey">Tech Stack </div>
+                        <div className="panelvalue">Angular 10, Node, Azure, HTML5, CSS3, JavaScript</div>
+                      </div>
                     </div>
-                    <div className="panelholder adjustpadding">
-                      <div className="panelkey">Team Size </div>
-                      <div className="panelvalue">15</div>
-                    </div>
-                    <div className="panelholder adjustpadding">
-                      <div className="panelkey">Tech Stack </div>
-                      <div className="panelvalue">Angular 10, Node, Azure, HTML5, CSS3, JavaScript</div>
-                    </div>
-                  </div>
-                  <div className="moreinfo">
-                    <i className="icon-action-redo"></i>More Info
-              </div>
+                    <div className="moreinfo">
+                      <i className="icon-action-redo"></i>More Info
                 </div>
-                <div className="card-back" style={{ "background": "#00EF00" }}>
-                  <div className="panelpadding">
-                    <div className="panelHeader">Description</div>
-                    <div className="panelContent" style={{ "lineHeight": "17px" }}>
-                    The VMware Edge Cloud Orchestrator™ provides centralized enterprise-wide installation, configuration and real-time monitoring in addition to orchestrating the data flow through the cloud network.It also provides Centralized monitoring, visibility and cloud control enable zero-touch branch deployment while delivering automatic business policy and firmware updates, link performance, and capacity measurement 
+                  </div>
+                  <div className="card-back" style={{ "background": "#00EF00" }}>
                     <div className="panelpadding">
-                      <div className="panelHeader">Roles &amp; Responsisbilities</div>
-                      <div className="panelDescription">
-                        <span>• Designed and developed some of the core features in this application in Angular 10.</span>
-                        <span>• Migrated this application from canjs to Angular 10.</span>
-                        <span>• Code reviewing and proving technical solutions for other developer queries.</span>
+                      <div className="panelHeader">Description</div>
+                      <div className="panelContent" style={{ "lineHeight": "17px" }}>
+                      The VMware Edge Cloud Orchestrator™ provides centralized enterprise-wide installation, configuration and real-time monitoring in addition to orchestrating the data flow through the cloud network.It also provides Centralized monitoring, visibility and cloud control enable zero-touch branch deployment while delivering automatic business policy and firmware updates, link performance, and capacity measurement 
+                      <div className="panelpadding">
+                        <div className="panelHeader">Roles &amp; Responsisbilities</div>
+                        <div className="panelDescription">
+                          <span>• Designed and developed some of the core features in this application in Angular 10.</span>
+                          <span>• Migrated this application from canjs to Angular 10.</span>
+                          <span>• Code reviewing and proving technical solutions for other developer queries.</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="footer toggle back">
-              <i className="icon-action-undo"></i>
-              Back
+              </div>
+              <div className="footer toggle back">
+                <i className="icon-action-undo"></i>
+                Back
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <h2 className="section-title">Freelancing Works</h2>
-      <div id="work-block">
+        <h2 className="section-title">Freelancing Works</h2>
+        <div id="work-block">
         <div className="work-item">
           <div className="card-holder">
             <div className="card-content">
