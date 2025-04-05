@@ -51,8 +51,8 @@ const Resume = (props) => {
             </li>
             <li className={`${animateClass("fadeInLeft")}`}>
               <div className="content-text">
-                <h3 className="line-title">Senior Member of Technical staff - Broadcom.</h3>
-                <span>Aug 2021 - Jan 2023</span>
+                <h3 className="line-title">Senior Member of Technical staff - Broadcom</h3>
+                <span>Aug 2021 - Present</span>
                 <p className="line-text">
                   Working as Senior Member of technical staff in Broadcom chennai, TamilNadu
                 </p>
@@ -60,7 +60,7 @@ const Resume = (props) => {
             </li>
             <li className={`${animateClass("fadeInLeft")}`}>
               <div className="content-text">
-                <h3 className="line-title">Member of Technical staff - Broadcom.</h3>
+                <h3 className="line-title">Member of Technical staff - Broadcom</h3>
                 <span>Aug 2021 - Jan 2023</span>
                 <p className="line-text">
                   Worked as Member of technical staff in Broadcom chennai, TamilNadu
@@ -69,8 +69,8 @@ const Resume = (props) => {
             </li>
             <li className={`${animateClass("fadeInRight")}`}>
               <div className="content-text">
-                <h3 className="line-title">Senior Engineer - Nielsen.</h3>
-                <span>Sep 2019 - Present</span>
+                <h3 className="line-title">Senior Engineer - NielsenIq</h3>
+                <span>Sep 2019 - Aug 2021</span>
                 <p className="line-text">
                   Working as Senior Engineer in Nielsen chennai, TamilNadu
                 </p>

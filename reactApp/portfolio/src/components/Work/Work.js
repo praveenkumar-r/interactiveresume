@@ -247,7 +247,7 @@ const Work = () => {
                     <div className="panelpadding">
                       <div className="panelHeader">Roles &amp; Responsisbilities</div>
                       <div className="panelDescription">
-                        <span>• Code reviewing and proving technical solutions for other developer queries..</span>
+                        <span>• Code reviewing and proving technical solutions for other developer queries.</span>
                         <span>• Designed and implemented CI/CD process involving DOCKER and Jenkins.</span>
                         <span>• E2E automation testing using protractor.</span>
                       </div>
@@ -289,12 +289,11 @@ const Work = () => {
                       <i className="icon-action-redo"></i>More Info
                 </div>
                   </div>
-                  <div className="card-back" style={{ "background": "#00EF00" }}>
+                  <div className="card-back" style={{ "background": "#CC092F" }}>
                     <div className="panelpadding">
                       <div className="panelHeader">Description</div>
                       <div className="panelContent" style={{ "lineHeight": "17px" }}>
-                      The VMware Edge Cloud Orchestrator™ provides centralized enterprise-wide installation, configuration and real-time monitoring in addition to orchestrating the data flow through the cloud network.It also provides Centralized monitoring, visibility and cloud control enable zero-touch branch deployment while delivering automatic business policy and firmware updates, link performance, and capacity measurement 
-                      <div className="panelpadding">
+                      The VMware Edge Cloud Orchestrator™ provides centralized enterprise-wide installation, configuration and real-time monitoring in addition to orchestrating the data flow through the cloud network.It also provides Centralized monitoring, visibility and cloud control enable zero-touch branch deployment while delivering autom                      <div className="panelpadding">
                         <div className="panelHeader">Roles &amp; Responsisbilities</div>
                         <div className="panelDescription">
                           <span>• Designed and developed some of the core features in this application in Angular 10.</span>

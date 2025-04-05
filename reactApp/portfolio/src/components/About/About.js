@@ -54,7 +54,7 @@ const About = (props) => {
                 </li>
                 <li>
                   <span className="pro-title"> Age </span>{" "}
-                  <span className="pro-detail">30 Years</span>
+                  <span className="pro-detail">35 Years</span>
                 </li>
                 <li>
                   <span className="pro-title"> Experience </span>{" "}
