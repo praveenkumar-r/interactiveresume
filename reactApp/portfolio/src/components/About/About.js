@@ -29,7 +29,7 @@ const About = (props) => {
             <p>
               I have{" "}
               <strong>
-                10+ years of experience as a software engineer, architect, and
+                14+ years of experience as a software engineer, architect, and
                 team builder
               </strong>
               .I enjoy building everything from small business sites to rich
